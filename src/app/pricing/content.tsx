@@ -425,7 +425,7 @@ export function PricingContent() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative bg-navy py-28 overflow-hidden">
+        <section className="relative bg-navy pt-32 pb-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-navy via-navy/95 to-navy/90" />
           <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

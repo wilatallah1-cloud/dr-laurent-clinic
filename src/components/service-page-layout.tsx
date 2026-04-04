@@ -107,7 +107,7 @@ export function ServicePageLayout({
       <Navbar />
       <main>
         {/* ─── Hero ─── */}
-        <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
           <div className="absolute inset-0 bg-navy">
             {heroImage && (
               <div

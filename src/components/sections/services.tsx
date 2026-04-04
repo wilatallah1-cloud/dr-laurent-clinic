@@ -106,8 +106,8 @@ export function ServicesSection() {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
           staggerDelay={0.08}
         >
-          {services.map((service) => (
-            <StaggerItem key={service.title}>
+          {services.map((service, idx) => (
+            <StaggerItem key={service.title} className={idx === services.length - 1 ? "sm:col-span-2 lg:col-span-1 lg:last:col-start-2" : ""}>
               <div className="group relative h-full rounded-2xl border border-border/50 bg-white overflow-hidden hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5 transition-all duration-500">
                 {/* Gradient header */}
                 <div
@@ -151,7 +151,7 @@ export function ServicesSection() {
             Not sure which service is right for you?
           </p>
           <Link
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg"
           >
             <Calendar className="w-4 h-4" />

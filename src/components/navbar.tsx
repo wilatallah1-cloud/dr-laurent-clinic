@@ -189,7 +189,7 @@ export function Navbar() {
                   Dr. Laurent
                 </span>
                 <span
-                  className={`block text-[10px] tracking-[0.25em] uppercase transition-colors duration-300 ${
+                  className={`block text-[10px] tracking-[0.2em] uppercase transition-colors duration-300 whitespace-nowrap ${
                     scrolled ? "text-gold" : "text-gold-light"
                   }`}
                 >
