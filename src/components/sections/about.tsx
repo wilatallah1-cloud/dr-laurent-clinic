@@ -74,11 +74,11 @@ export function AboutSection() {
             </FadeIn>
           </div>
 
-          <StaggerChildren className="grid grid-cols-2 gap-4" staggerDelay={0.08}>
+          <StaggerChildren className="grid grid-cols-1 sm:grid-cols-2 gap-4" staggerDelay={0.08}>
             {values.map((v) => (
               <StaggerItem
                 key={v.title}
-                className={v.wide ? "col-span-2" : ""}
+                className={v.wide ? "sm:col-span-2" : ""}
               >
                 <div className="flex items-start gap-4 p-5 rounded-xl bg-white border border-border/50 hover:border-gold/30 hover:shadow-sm transition-all duration-300 group">
                   <div className="mt-0.5 p-2 rounded-lg bg-gold/10 text-gold group-hover:bg-gold group-hover:text-navy transition-colors duration-300">

@@ -397,7 +397,7 @@ function PriceTable({ category }: { category: PriceCategory }) {
         {category.items.map((item, i) => (
           <div
             key={i}
-            className={`flex items-center justify-between px-5 py-3.5 ${
+            className={`flex items-center justify-between px-4 sm:px-5 py-3 sm:py-3.5 min-h-[44px] ${
               i !== category.items.length - 1 ? "border-b border-border/30" : ""
             } hover:bg-cream/50 transition-colors`}
           >

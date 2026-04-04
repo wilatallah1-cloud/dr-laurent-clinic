@@ -21,7 +21,7 @@ const footerLinks = [
 export function FooterSection() {
   return (
     <footer id="contact" className="relative bg-navy text-white">
-      <div className="max-w-7xl mx-auto px-6 pt-16 pb-24 lg:pb-8">
+      <div className="max-w-7xl mx-auto px-6 pt-16 pb-40 lg:pb-8">
         <FadeIn>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
             {/* Brand */}

@@ -175,13 +175,13 @@ export function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-24">
+          <div className="flex items-center justify-between h-16 md:h-24">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <img
                 src="/logo.png"
                 alt="Dr. Laurent - Médecine Privée & Esthétique"
-                className={`h-24 md:h-28 w-auto transition-all duration-300 ${
+                className={`h-14 md:h-24 lg:h-28 w-auto transition-all duration-300 ${
                   scrolled ? "" : "brightness-0 invert"
                 }`}
               />
@@ -272,7 +272,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-navy pt-24 px-6 overflow-y-auto xl:hidden pb-32"
+            className="fixed inset-0 z-40 bg-navy pt-16 md:pt-24 px-6 overflow-y-auto xl:hidden pb-32"
           >
             <nav className="flex flex-col">
               <Link href="/" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
