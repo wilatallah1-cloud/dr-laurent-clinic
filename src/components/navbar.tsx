@@ -181,7 +181,7 @@ export function Navbar() {
               <img
                 src="/logo.png"
                 alt="Dr. Laurent - Médecine Privée & Esthétique"
-                className={`h-14 w-auto transition-all duration-300 ${
+                className={`h-16 md:h-20 w-auto transition-all duration-300 ${
                   scrolled ? "" : "brightness-0 invert"
                 }`}
               />
