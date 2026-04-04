@@ -69,7 +69,7 @@ function DesktopDropdown({
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className={`flex items-center gap-1 px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
+        className={`flex items-center gap-1 px-2.5 py-2 text-sm font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
           scrolled ? "text-navy/70" : "text-white/80"
         }`}
       >
@@ -196,7 +196,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
+                  className={`px-2.5 py-2 text-sm font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
                     scrolled ? "text-navy/70" : "text-white/80"
                   }`}
                 >
@@ -222,7 +222,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
+                  className={`px-2.5 py-2 text-sm font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
                     scrolled ? "text-navy/70" : "text-white/80"
                   }`}
                 >
@@ -235,7 +235,7 @@ export function Navbar() {
             <div className="hidden xl:flex items-center gap-3">
               <Link
                 href="tel:+15145003422"
-                className={`flex items-center gap-1.5 text-[13px] transition-colors duration-300 ${
+                className={`flex items-center gap-1.5 text-sm transition-colors duration-300 ${
                   scrolled ? "text-navy" : "text-white"
                 }`}
               >
@@ -244,7 +244,7 @@ export function Navbar() {
               </Link>
               <Link
                 href="/contact"
-                className="flex items-center gap-1.5 bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-full text-[13px] font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
+                className="flex items-center gap-1.5 bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
               >
                 <Calendar className="w-3.5 h-3.5" />
                 Book Now
