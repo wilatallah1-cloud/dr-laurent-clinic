@@ -153,7 +153,7 @@ export function ContactContent() {
                     <div className="p-3 rounded-xl bg-gold/10 shrink-0">
                       <info.icon className="w-5 h-5 text-gold" />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <h3 className="font-heading text-base font-semibold text-navy mb-1">
                         {info.title}
                       </h3>
@@ -162,7 +162,7 @@ export function ContactContent() {
                           href={info.href}
                           target={info.href.startsWith("http") ? "_blank" : undefined}
                           rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-sm text-muted-foreground hover:text-gold transition-colors"
+                          className="text-sm text-muted-foreground hover:text-gold transition-colors break-all"
                         >
                           {info.detail}
                         </a>
