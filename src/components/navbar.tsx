@@ -177,23 +177,14 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative">
-                <span
-                  className={`font-heading text-2xl md:text-3xl font-semibold italic tracking-wide transition-colors duration-300 ${
-                    scrolled ? "text-navy" : "text-white"
-                  }`}
-                >
-                  Dr. Laurent
-                </span>
-                <span
-                  className={`block text-[10px] tracking-[0.2em] uppercase transition-colors duration-300 whitespace-nowrap ${
-                    scrolled ? "text-gold" : "text-gold-light"
-                  }`}
-                >
-                  Médecine Privée & Esthétique
-                </span>
-              </div>
+            <Link href="/" className="flex-shrink-0">
+              <img
+                src="/logo.png"
+                alt="Dr. Laurent - Médecine Privée & Esthétique"
+                className={`h-14 w-auto transition-all duration-300 ${
+                  scrolled ? "" : "brightness-0 invert"
+                }`}
+              />
             </Link>
 
             {/* Desktop Nav */}

@@ -27,12 +27,11 @@ export function FooterSection() {
             {/* Brand */}
             <div className="lg:col-span-1">
               <div className="mb-4">
-                <span className="font-heading text-2xl font-semibold italic text-white">
-                  Dr. Laurent
-                </span>
-                <span className="block text-[10px] tracking-[0.25em] uppercase text-gold mt-1">
-                  Médecine Privée & Esthétique
-                </span>
+                <img
+                  src="/logo.png"
+                  alt="Dr. Laurent - Médecine Privée & Esthétique"
+                  className="h-14 w-auto brightness-0 invert"
+                />
               </div>
               <p className="text-white/50 text-sm leading-relaxed mb-6">
                 Your trusted partner in private healthcare and medical aesthetic,
