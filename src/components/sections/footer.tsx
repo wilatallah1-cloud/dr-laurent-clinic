@@ -30,7 +30,7 @@ export function FooterSection() {
                 <img
                   src="/logo.png"
                   alt="Dr. Laurent - Médecine Privée & Esthétique"
-                  className="h-20 w-auto brightness-0 invert"
+                  className="h-28 w-auto brightness-0 invert"
                 />
               </div>
               <p className="text-white/50 text-sm leading-relaxed mb-6">
