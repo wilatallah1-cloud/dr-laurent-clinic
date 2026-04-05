@@ -13,6 +13,7 @@ import {
   Stethoscope,
 } from "lucide-react";
 import Link from "@/components/locale-link";
+import { usePathname } from "next/navigation";
 import { useLocale } from "@/lib/locale";
 import { getTranslations } from "@/lib/translations";
 
@@ -166,6 +167,11 @@ export function Navbar() {
 
   const closeMobile = () => setMobileOpen(false);
 
+  const pathname = usePathname();
+  const basePath = pathname.replace(/^\/(en|fr)/, "") || "/";
+  const otherLocale = locale === "en" ? "fr" : "en";
+  const switchHref = `/${otherLocale}${basePath === "/" ? "" : basePath}`;
+
   return (
     <>
       <motion.header
@@ -237,6 +243,16 @@ export function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden xl:flex items-center gap-3">
+              <a
+                href={switchHref}
+                className={`px-2.5 py-1.5 rounded-full border text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
+                  scrolled
+                    ? "border-navy/20 text-navy hover:bg-gold hover:border-gold hover:text-navy"
+                    : "border-white/30 text-white hover:bg-gold hover:border-gold hover:text-navy"
+                }`}
+              >
+                {otherLocale === "fr" ? "FR" : "EN"}
+              </a>
               <Link
                 href="tel:+15145003422"
                 className={`flex items-center gap-1.5 text-sm transition-colors duration-300 ${
@@ -255,15 +271,27 @@ export function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile Menu Toggle */}
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className={`xl:hidden p-2 transition-colors ${
-                scrolled ? "text-navy" : "text-white"
-              }`}
-            >
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            {/* Mobile: Lang + Menu Toggle */}
+            <div className="xl:hidden flex items-center gap-2">
+              <a
+                href={switchHref}
+                className={`px-2.5 py-1.5 rounded-full border text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
+                  scrolled
+                    ? "border-navy/20 text-navy hover:bg-gold hover:border-gold"
+                    : "border-white/30 text-white hover:bg-gold hover:border-gold hover:text-navy"
+                }`}
+              >
+                {otherLocale === "fr" ? "FR" : "EN"}
+              </a>
+              <button
+                onClick={() => setMobileOpen(!mobileOpen)}
+                className={`p-2 transition-colors ${
+                  scrolled ? "text-navy" : "text-white"
+                }`}
+              >
+                {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
         </div>
       </motion.header>
