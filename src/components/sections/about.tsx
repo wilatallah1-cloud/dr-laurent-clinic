@@ -2,37 +2,41 @@
 
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/motion";
 import { Heart, CheckCircle, Users, Award, Shield } from "lucide-react";
-
-const values = [
-  {
-    icon: CheckCircle,
-    title: "Patient-Centered",
-    desc: "Personalized care for every family member",
-  },
-  {
-    icon: Heart,
-    title: "Compassionate",
-    desc: "Understanding & supportive approach",
-  },
-  {
-    icon: Users,
-    title: "All Ages",
-    desc: "From newborns to seniors",
-  },
-  {
-    icon: Award,
-    title: "Excellence",
-    desc: "Highest medical standards",
-  },
-  {
-    icon: Shield,
-    title: "Inclusive",
-    desc: "Safe, respectful care for all members of the LGBTQIA2S+ community",
-    wide: true,
-  },
-];
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
 
 export function AboutSection() {
+  const locale = useLocale();
+  const t = getTranslations(locale);
+
+  const values = [
+    {
+      icon: CheckCircle,
+      title: t.about.patientCentered,
+      desc: t.about.patientCenteredDesc,
+    },
+    {
+      icon: Heart,
+      title: t.about.compassionate,
+      desc: t.about.compassionateDesc,
+    },
+    {
+      icon: Users,
+      title: t.about.allAges,
+      desc: t.about.allAgesDesc,
+    },
+    {
+      icon: Award,
+      title: t.about.excellence,
+      desc: t.about.excellenceDesc,
+    },
+    {
+      icon: Shield,
+      title: t.about.inclusive,
+      desc: t.about.inclusiveDesc,
+      wide: true,
+    },
+  ];
   return (
     <section id="about" className="relative py-24 sm:py-32 bg-cream">
       <div className="max-w-6xl mx-auto px-6">
@@ -40,7 +44,7 @@ export function AboutSection() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-8">
             <Heart className="w-4 h-4 text-gold" />
             <span className="text-sm text-gold font-medium tracking-wide">
-              About Our Clinic
+              {t.about.badge}
             </span>
           </div>
         </FadeIn>
@@ -49,27 +53,20 @@ export function AboutSection() {
           <div>
             <FadeIn delay={0.1}>
               <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-navy leading-tight mb-6">
-                Clinique Dr.Laurent :{" "}
-                <span className="text-gold">Your Trusted</span> Partner in
-                Private & Medico-Aesthetic
+                {t.about.title}{" "}
+                <span className="text-gold">{t.about.titleHighlight}</span> {t.about.titleEnd}
               </h2>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Dr. Laurent&apos;s private medical clinic combines comprehensive
-                family medicine with advanced medico-aesthetic treatments,
-                offering personalized and compassionate care for patients of all
-                ages.
+                {t.about.p1}
               </p>
             </FadeIn>
 
             <FadeIn delay={0.3}>
               <p className="text-muted-foreground leading-relaxed">
-                From primary healthcare to aesthetic enhancements, we are
-                committed to the highest medical standards and a
-                patient-centered approach, ensuring you receive the attention and
-                expertise you deserve.
+                {t.about.p2}
               </p>
             </FadeIn>
           </div>

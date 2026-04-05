@@ -2,9 +2,14 @@
 
 import { motion } from "framer-motion";
 import { Stethoscope, Sparkles } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/locale-link";
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
 
 export function HeroSection() {
+  const locale = useLocale();
+  const t = getTranslations(locale);
+
   return (
     <section
       id="home"
@@ -68,9 +73,9 @@ export function HeroSection() {
           transition={{ duration: 0.9, delay: 0.4 }}
           className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold text-white leading-[1.05] mb-6"
         >
-          Excellence in
+          {t.hero.excellenceIn}
           <br />
-          <span className="gold-shimmer">Medicine</span>
+          <span className="gold-shimmer">{t.hero.medicine}</span>
         </motion.h1>
 
         <motion.p
@@ -79,7 +84,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg sm:text-xl text-white/70 font-light max-w-2xl mx-auto mb-4 tracking-wide"
         >
-          Private Healthcare & Medical Aesthetic Solutions
+          {t.hero.subtitle}
         </motion.p>
 
         <motion.p
@@ -88,10 +93,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-sm sm:text-base text-white/50 max-w-xl mx-auto mb-10 leading-relaxed"
         >
-          One physician. Two specialties. Dr. Laurent unites comprehensive
-          medical care and advanced medical aesthetic treatments under one
-          roof—distinct services delivered with the same precision, safety, and
-          personalized excellence.
+          {t.hero.description}
         </motion.p>
 
         <motion.div
@@ -105,14 +107,14 @@ export function HeroSection() {
             className="group flex items-center gap-3 bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 hover:border-gold/40 text-white px-8 py-4 rounded-full text-sm font-medium tracking-wide transition-all duration-300"
           >
             <Stethoscope className="w-4 h-4 text-gold" />
-            Private Medicine
+            {t.hero.privateMedicine}
           </Link>
           <Link
             href="#services"
             className="group flex items-center gap-3 bg-gold hover:bg-gold-light text-navy px-8 py-4 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
           >
             <Sparkles className="w-4 h-4" />
-            Medical Aesthetic
+            {t.hero.medicalAesthetic}
           </Link>
         </motion.div>
 

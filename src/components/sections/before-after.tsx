@@ -2,31 +2,35 @@
 
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/motion";
 import { Eye } from "lucide-react";
-
-const results = [
-  {
-    treatment: "Dermal Fillers",
-    area: "Lip Enhancement",
-    description: "Natural volume enhancement with hyaluronic acid fillers",
-  },
-  {
-    treatment: "Botox",
-    area: "Forehead & Crow's Feet",
-    description: "Smooth, refreshed appearance with precise injections",
-  },
-  {
-    treatment: "Body Contouring",
-    area: "Abdomen",
-    description: "Non-invasive sculpting for a defined, toned silhouette",
-  },
-  {
-    treatment: "Laser Treatment",
-    area: "Skin Rejuvenation",
-    description: "Improved tone, texture, and radiance with advanced laser",
-  },
-];
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
 
 export function BeforeAfterSection() {
+  const locale = useLocale();
+  const t = getTranslations(locale);
+
+  const results = [
+    {
+      treatment: t.beforeAfter.dermalFillers,
+      area: t.beforeAfter.lipEnhancement,
+      description: t.beforeAfter.lipDesc,
+    },
+    {
+      treatment: t.beforeAfter.botox,
+      area: t.beforeAfter.foreheadCrows,
+      description: t.beforeAfter.botoxDesc,
+    },
+    {
+      treatment: t.beforeAfter.bodyContouringTitle,
+      area: t.beforeAfter.abdomen,
+      description: t.beforeAfter.bodyContouringDesc,
+    },
+    {
+      treatment: t.beforeAfter.laserTreatment,
+      area: t.beforeAfter.skinRejuvenation,
+      description: t.beforeAfter.laserDesc,
+    },
+  ];
   return (
     <section id="results" className="relative py-24 sm:py-32 bg-cream">
       <div className="max-w-7xl mx-auto px-6">
@@ -34,16 +38,15 @@ export function BeforeAfterSection() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-6">
             <Eye className="w-4 h-4 text-gold" />
             <span className="text-sm text-gold font-medium tracking-wide">
-              Treatment Results
+              {t.beforeAfter.badge}
             </span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-navy mb-4">
-            Real Results,{" "}
-            <span className="text-gold">Real Confidence</span>
+            {t.beforeAfter.title}{" "}
+            <span className="text-gold">{t.beforeAfter.titleHighlight}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            See the natural, balanced results our patients achieve. Every
-            treatment is tailored to enhance your unique features.
+            {t.beforeAfter.subtitle}
           </p>
         </FadeIn>
 
@@ -61,19 +64,19 @@ export function BeforeAfterSection() {
                       <Eye className="w-7 h-7 text-gold" />
                     </div>
                     <p className="text-xs text-muted-foreground uppercase tracking-wider">
-                      Before & After
+                      {t.beforeAfter.beforeAfterLabel}
                     </p>
                     <p className="text-xs text-muted-foreground/60 mt-1">
-                      Available at consultation
+                      {t.beforeAfter.available}
                     </p>
                   </div>
                   {/* Divider line */}
                   <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gold/20" />
                   <div className="absolute top-4 left-4 bg-navy/80 text-white text-[10px] px-2 py-1 rounded-full uppercase tracking-wider">
-                    Before
+                    {t.beforeAfter.before}
                   </div>
                   <div className="absolute top-4 right-4 bg-gold/90 text-navy text-[10px] px-2 py-1 rounded-full uppercase tracking-wider font-medium">
-                    After
+                    {t.beforeAfter.after}
                   </div>
                 </div>
 
@@ -95,8 +98,7 @@ export function BeforeAfterSection() {
 
         <FadeIn delay={0.3} className="text-center mt-10">
           <p className="text-sm text-muted-foreground">
-            Individual results may vary. Photos available during your personal
-            consultation.
+            {t.beforeAfter.disclaimer}
           </p>
         </FadeIn>
       </div>

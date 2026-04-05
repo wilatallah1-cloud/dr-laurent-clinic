@@ -20,7 +20,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
+import Link from "@/components/locale-link";
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
 
 /* ─── Types ─── */
 export interface ServiceFeature {
@@ -89,19 +91,27 @@ export function ServicePageLayout({
   heroDescription,
   heroBadges = [],
   heroImage,
-  whyTitle = "Why Choose Dr. Laurent",
+  whyTitle,
   whySubtitle,
   features,
-  proceduresTitle = "Our Treatments",
+  proceduresTitle,
   proceduresSubtitle,
   procedures,
   steps,
   testimonials,
-  faqTitle = "Frequently Asked Questions",
+  faqTitle,
   faqs,
-  formTitle = "Book Your Consultation",
+  formTitle,
   formOptions = [],
 }: ServicePageProps) {
+  const locale = useLocale();
+  const t = getTranslations(locale);
+
+  const effectiveWhyTitle = whyTitle || t.service.whyChoose;
+  const effectiveProceduresTitle = proceduresTitle || t.service.ourTreatments;
+  const effectiveFaqTitle = faqTitle || t.service.faq;
+  const effectiveFormTitle = formTitle || t.service.bookConsultation;
+
   return (
     <>
       <Navbar />
@@ -157,7 +167,7 @@ export function ServicePageLayout({
                     className="flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
                   >
                     <Calendar className="w-5 h-5" />
-                    Book Your Consultation
+                    {t.service.bookConsultation}
                   </Link>
                   <Link
                     href="tel:+15145003422"
@@ -177,15 +187,15 @@ export function ServicePageLayout({
                 className="bg-white rounded-2xl p-8 shadow-2xl"
               >
                 <h3 className="font-heading text-2xl font-semibold text-navy mb-2">
-                  {formTitle}
+                  {effectiveFormTitle}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-6">
-                  Free analysis — less than 1 minute to start your consultation
+                  {t.service.formSubtitle}
                 </p>
                 <form className="space-y-4">
                   <div>
                     <label className="text-sm font-medium text-navy block mb-1.5">
-                      Full Name *
+                      {t.service.fullName}
                     </label>
                     <input
                       type="text"
@@ -195,7 +205,7 @@ export function ServicePageLayout({
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy block mb-1.5">
-                      Email Address *
+                      {t.service.emailAddress}
                     </label>
                     <input
                       type="email"
@@ -205,7 +215,7 @@ export function ServicePageLayout({
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy block mb-1.5">
-                      Phone Number
+                      {t.service.phoneNumber}
                     </label>
                     <input
                       type="tel"
@@ -215,13 +225,13 @@ export function ServicePageLayout({
                   {formOptions.length > 0 && (
                     <div>
                       <label className="text-sm font-medium text-navy block mb-1.5">
-                        What are you interested in? *
+                        {t.service.interestedIn}
                       </label>
                       <select
                         required
                         className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
                       >
-                        <option value="">Select a treatment</option>
+                        <option value="">{t.service.selectTreatment}</option>
                         {formOptions.map((opt) => (
                           <option key={opt} value={opt}>
                             {opt}
@@ -234,11 +244,11 @@ export function ServicePageLayout({
                     type="submit"
                     className="w-full bg-gold hover:bg-gold-light text-navy py-3.5 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
                   >
-                    Submit
+                    {t.service.submit}
                   </button>
                   <p className="text-xs text-center text-muted-foreground">
                     <Shield className="w-3 h-3 inline mr-1" />
-                    Your information is 100% confidential and secure
+                    {t.service.confidential}
                   </p>
                 </form>
               </div>
@@ -251,7 +261,7 @@ export function ServicePageLayout({
           <div className="max-w-6xl mx-auto px-6">
             <FadeIn className="text-center mb-16">
               <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-navy mb-4">
-                {whyTitle}
+                {effectiveWhyTitle}
               </h2>
               {whySubtitle && (
                 <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -287,7 +297,7 @@ export function ServicePageLayout({
           <div className="relative z-10 max-w-6xl mx-auto px-6">
             <FadeIn className="text-center mb-16">
               <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-navy mb-4">
-                {proceduresTitle}
+                {effectiveProceduresTitle}
               </h2>
               {proceduresSubtitle && (
                 <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -312,7 +322,7 @@ export function ServicePageLayout({
                       href="#contact"
                       className="flex items-center gap-2 text-gold text-sm font-medium hover:gap-3 transition-all"
                     >
-                      Book an Evaluation
+                      {t.service.bookEvaluation}
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -328,7 +338,7 @@ export function ServicePageLayout({
             <div className="max-w-4xl mx-auto px-6">
               <FadeIn className="text-center mb-16">
                 <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-navy">
-                  Our Process
+                  {t.service.ourProcess}
                 </h2>
               </FadeIn>
               <div className="space-y-6">
@@ -362,10 +372,10 @@ export function ServicePageLayout({
             <div className="max-w-6xl mx-auto px-6">
               <FadeIn className="text-center mb-16">
                 <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-2">
-                  Patient Testimonials
+                  {t.service.patientTestimonials}
                 </h2>
                 <div className="flex items-center justify-center gap-2 mt-4">
-                  <span className="text-white/60 text-sm">Rated</span>
+                  <span className="text-white/60 text-sm">{t.service.rated}</span>
                   <div className="flex gap-0.5">
                     {[1, 2, 3, 4, 5].map((i) => (
                       <Star
@@ -374,30 +384,30 @@ export function ServicePageLayout({
                       />
                     ))}
                   </div>
-                  <span className="text-white/60 text-sm">by our patients</span>
+                  <span className="text-white/60 text-sm">{t.service.byPatients}</span>
                 </div>
               </FadeIn>
               <StaggerChildren
                 className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
                 staggerDelay={0.1}
               >
-                {testimonials.map((t) => (
-                  <StaggerItem key={t.name}>
+                {testimonials.map((tm) => (
+                  <StaggerItem key={tm.name}>
                     <div className="p-6 rounded-2xl bg-white/5 border border-white/10 h-full flex flex-col">
                       <Quote className="w-8 h-8 text-gold/30 mb-3" />
                       <p className="text-white/70 text-sm leading-relaxed flex-1 mb-5">
-                        &ldquo;{t.text}&rdquo;
+                        &ldquo;{tm.text}&rdquo;
                       </p>
                       <div className="flex items-center gap-3 pt-4 border-t border-white/10">
                         <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-semibold text-sm">
-                          {t.initial}
+                          {tm.initial}
                         </div>
                         <div>
                           <div className="text-white text-sm font-medium">
-                            {t.name}
+                            {tm.name}
                           </div>
                           <div className="text-gold/60 text-xs uppercase tracking-wider">
-                            {t.treatment}
+                            {tm.treatment}
                           </div>
                         </div>
                       </div>
@@ -414,7 +424,7 @@ export function ServicePageLayout({
           <div className="max-w-3xl mx-auto px-6">
             <FadeIn className="text-center mb-14">
               <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-navy">
-                {faqTitle}
+                {effectiveFaqTitle}
               </h2>
             </FadeIn>
             <FadeIn delay={0.2}>
@@ -442,18 +452,18 @@ export function ServicePageLayout({
           <div className="max-w-2xl mx-auto px-6">
             <FadeIn>
               <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-white mb-4">
-                Ready to start your{" "}
-                <span className="text-gold">transformation?</span>
+                {t.service.readyTitle}{" "}
+                <span className="text-gold">{t.service.transformation}</span>
               </h2>
               <p className="text-white/50 mb-8">
-                Book your consultation today
+                {t.service.bookToday}
               </p>
               <Link
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-10 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
               >
                 <Calendar className="w-5 h-5" />
-                Book Now
+                {t.nav.bookNow}
               </Link>
             </FadeIn>
           </div>

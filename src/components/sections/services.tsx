@@ -12,75 +12,79 @@ import {
   ArrowRight,
   Calendar,
 } from "lucide-react";
-import Link from "next/link";
-
-const services = [
-  {
-    icon: Stethoscope,
-    title: "Family Medicine",
-    desc: "Primary care for patients of all ages—from newborns to seniors—delivered in an inclusive environment that also warmly welcomes transgender and gender-diverse individuals.",
-    price: "Consultation",
-    color: "from-blue-50 to-blue-100/50",
-    iconBg: "bg-blue-100 text-blue-700",
-    href: "/medical-services/family-medicine",
-  },
-  {
-    icon: Sparkles,
-    title: "Injectables & Fillers",
-    desc: "Botox, dermal fillers, and advanced injectable treatments to enhance your natural beauty with subtle, elegant results.",
-    price: "Starting at $350",
-    color: "from-amber-50 to-yellow-50",
-    iconBg: "bg-amber-100 text-amber-700",
-    href: "/medical-aesthetic/injectables",
-  },
-  {
-    icon: Scale,
-    title: "Weight Management",
-    desc: "Personalized programs combining medical expertise, nutrition guidance, and ongoing support for sustainable results.",
-    price: "Starting at $200",
-    color: "from-green-50 to-emerald-50",
-    iconBg: "bg-green-100 text-green-700",
-    href: "/medical-services/weight-management",
-  },
-  {
-    icon: Zap,
-    title: "Laser Treatments",
-    desc: "Advanced laser technology for skin rejuvenation, hair removal, and aesthetic improvements with minimal downtime.",
-    price: "Starting at $250",
-    color: "from-purple-50 to-violet-50",
-    iconBg: "bg-purple-100 text-purple-700",
-    href: "/medical-aesthetic/lasers",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Preventive Screenings",
-    desc: "Early detection and prevention strategies to maintain optimal health and catch issues before they become serious.",
-    price: "Consultation",
-    color: "from-teal-50 to-cyan-50",
-    iconBg: "bg-teal-100 text-teal-700",
-    href: "/medical-services/consultation",
-  },
-  {
-    icon: Dumbbell,
-    title: "Body Contouring",
-    desc: "Non-invasive and minimally invasive treatments to sculpt and enhance your physique with natural-looking results.",
-    price: "Starting at $500",
-    color: "from-rose-50 to-pink-50",
-    iconBg: "bg-rose-100 text-rose-700",
-    href: "/medical-aesthetic/lipolysis",
-  },
-  {
-    icon: Gem,
-    title: "Penile Enhancement & Liquid BBL",
-    desc: "Non-surgical treatments designed to enhance contour and create natural, balanced volume with discretion and expertise.",
-    price: "Consultation Required",
-    color: "from-slate-50 to-stone-50",
-    iconBg: "bg-slate-100 text-slate-700",
-    href: "/sexual-health/penis-fillers",
-  },
-];
+import Link from "@/components/locale-link";
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
 
 export function ServicesSection() {
+  const locale = useLocale();
+  const t = getTranslations(locale);
+
+  const services = [
+    {
+      icon: Stethoscope,
+      title: t.services.familyMedicine,
+      desc: t.services.familyMedicineDesc,
+      price: t.services.consultation,
+      color: "from-blue-50 to-blue-100/50",
+      iconBg: "bg-blue-100 text-blue-700",
+      href: "/medical-services/family-medicine",
+    },
+    {
+      icon: Sparkles,
+      title: t.services.injectables,
+      desc: t.services.injectablesDesc,
+      price: `${t.services.startingAt} $350`,
+      color: "from-amber-50 to-yellow-50",
+      iconBg: "bg-amber-100 text-amber-700",
+      href: "/medical-aesthetic/injectables",
+    },
+    {
+      icon: Scale,
+      title: t.services.weightManagement,
+      desc: t.services.weightManagementDesc,
+      price: `${t.services.startingAt} $200`,
+      color: "from-green-50 to-emerald-50",
+      iconBg: "bg-green-100 text-green-700",
+      href: "/medical-services/weight-management",
+    },
+    {
+      icon: Zap,
+      title: t.services.laserTreatments,
+      desc: t.services.laserTreatmentsDesc,
+      price: `${t.services.startingAt} $250`,
+      color: "from-purple-50 to-violet-50",
+      iconBg: "bg-purple-100 text-purple-700",
+      href: "/medical-aesthetic/lasers",
+    },
+    {
+      icon: ShieldCheck,
+      title: t.services.preventiveScreenings,
+      desc: t.services.preventiveScreeningsDesc,
+      price: t.services.consultation,
+      color: "from-teal-50 to-cyan-50",
+      iconBg: "bg-teal-100 text-teal-700",
+      href: "/medical-services/consultation",
+    },
+    {
+      icon: Dumbbell,
+      title: t.services.bodyContouring,
+      desc: t.services.bodyContouringDesc,
+      price: `${t.services.startingAt} $500`,
+      color: "from-rose-50 to-pink-50",
+      iconBg: "bg-rose-100 text-rose-700",
+      href: "/medical-aesthetic/lipolysis",
+    },
+    {
+      icon: Gem,
+      title: t.services.penileAndBBL,
+      desc: t.services.penileAndBBLDesc,
+      price: t.services.consultationRequired,
+      color: "from-slate-50 to-stone-50",
+      iconBg: "bg-slate-100 text-slate-700",
+      href: "/sexual-health/penis-fillers",
+    },
+  ];
   return (
     <section id="services" className="relative py-24 sm:py-32 bg-white noise-overlay">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -88,17 +92,16 @@ export function ServicesSection() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-6">
             <Sparkles className="w-4 h-4 text-gold" />
             <span className="text-sm text-gold font-medium tracking-wide">
-              Our Specialized Services
+              {t.services.badge}
             </span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-navy mb-4">
-            Private Healthcare & Medico-
+            {t.services.title}
             <br />
-            <span className="text-gold">Aesthetic Excellence</span>
+            <span className="text-gold">{t.services.titleHighlight}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Medical care and medico-aesthetic treatments designed with your
-            privacy, comfort, and well-being at the heart of everything we do.
+            {t.services.subtitle}
           </p>
         </FadeIn>
 
@@ -136,7 +139,7 @@ export function ServicesSection() {
                       href={service.href}
                       className="flex items-center gap-1.5 text-sm font-medium text-navy/60 hover:text-gold transition-colors group/link"
                     >
-                      Learn More
+                      {t.services.learnMore}
                       <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
                     </Link>
                   </div>
@@ -148,14 +151,14 @@ export function ServicesSection() {
 
         <FadeIn delay={0.4} className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            Not sure which service is right for you?
+            {t.services.notSure}
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg"
           >
             <Calendar className="w-4 h-4" />
-            Schedule a Consultation
+            {t.services.scheduleConsultation}
           </Link>
         </FadeIn>
       </div>

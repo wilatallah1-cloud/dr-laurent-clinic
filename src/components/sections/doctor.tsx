@@ -1,8 +1,12 @@
 "use client";
 
 import { FadeIn, ScaleIn } from "@/components/motion";
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
 
 export function DoctorSection() {
+  const locale = useLocale();
+  const t = getTranslations(locale);
   return (
     <section className="relative py-20 sm:py-28 bg-cream overflow-hidden">
       <div className="max-w-5xl mx-auto px-6">
@@ -28,17 +32,14 @@ export function DoctorSection() {
                   <div className="mb-6">
                     <div className="w-12 h-px bg-gold mb-6" />
                     <h3 className="font-heading text-3xl sm:text-4xl font-semibold text-white mb-2">
-                      Dr. Jean-Baptiste Laurent
+                      {t.doctor.name}
                     </h3>
                     <p className="text-gold text-lg font-light tracking-wide">
-                      Family Medicine Specialist
+                      {t.doctor.role}
                     </p>
                   </div>
                   <p className="text-white/60 leading-relaxed text-sm mb-6">
-                    With extensive training in both family medicine and aesthetic
-                    procedures, Dr. Laurent brings a unique dual expertise to
-                    every patient interaction—combining medical rigor with an
-                    artist&apos;s eye for natural, balanced results.
+                    {t.doctor.bio}
                   </p>
                   <div className="flex items-center gap-6">
                     <div className="text-center">
@@ -46,7 +47,7 @@ export function DoctorSection() {
                         15+
                       </div>
                       <div className="text-white/40 text-xs uppercase tracking-wider">
-                        Years
+                        {t.doctor.years}
                       </div>
                     </div>
                     <div className="w-px h-10 bg-white/10" />
@@ -55,7 +56,7 @@ export function DoctorSection() {
                         5000+
                       </div>
                       <div className="text-white/40 text-xs uppercase tracking-wider">
-                        Patients
+                        {t.doctor.patients}
                       </div>
                     </div>
                     <div className="w-px h-10 bg-white/10" />
@@ -64,7 +65,7 @@ export function DoctorSection() {
                         3
                       </div>
                       <div className="text-white/40 text-xs uppercase tracking-wider">
-                        Certifications
+                        {t.doctor.certifications}
                       </div>
                     </div>
                   </div>

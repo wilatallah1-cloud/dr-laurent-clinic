@@ -8,17 +8,26 @@ import {
   Clock,
   Calendar,
 } from "lucide-react";
-import Link from "next/link";
-
-const footerLinks = [
-  { label: "Blog", href: "/blog" },
-  { label: "Legal", href: "/legal-notice" },
-  { label: "Privacy", href: "/privacy-policy" },
-  { label: "Terms", href: "/terms-of-use" },
-  { label: "Conditions", href: "/terms-of-sale" },
-];
+import Link from "@/components/locale-link";
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
+import { usePathname } from "next/navigation";
 
 export function FooterSection() {
+  const locale = useLocale();
+  const t = getTranslations(locale);
+  const pathname = usePathname();
+  // Strip current locale prefix to get the base path
+  const basePath = pathname.replace(/^\/(en|fr)/, '') || '/';
+
+  const footerLinks = [
+    { label: t.footer.blog, href: "/blog" },
+    { label: t.footer.legal, href: "/legal-notice" },
+    { label: t.footer.privacy, href: "/privacy-policy" },
+    { label: t.footer.terms, href: "/terms-of-use" },
+    { label: t.footer.conditions, href: "/terms-of-sale" },
+  ];
+
   return (
     <footer id="contact" className="relative bg-navy text-white">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-40 lg:pb-8">
@@ -34,9 +43,7 @@ export function FooterSection() {
                 />
               </div>
               <p className="text-white/50 text-sm leading-relaxed mb-6">
-                Your trusted partner in private healthcare and medical aesthetic,
-                offering compassionate care and expert guidance for your wellness
-                journey.
+                {t.footer.tagline}
               </p>
               <div className="flex items-center gap-3">
                 <Link
@@ -63,7 +70,7 @@ export function FooterSection() {
                   <div className="p-2 rounded-lg bg-gold/10">
                     <MapPin className="w-4 h-4 text-gold" />
                   </div>
-                  <h4 className="font-semibold text-sm">Visit Us</h4>
+                  <h4 className="font-semibold text-sm">{t.footer.visitUs}</h4>
                 </div>
                 <p className="text-white/60 text-sm leading-relaxed">
                   4072 Le Corbusier
@@ -77,7 +84,7 @@ export function FooterSection() {
                   <div className="p-2 rounded-lg bg-gold/10">
                     <Phone className="w-4 h-4 text-gold" />
                   </div>
-                  <h4 className="font-semibold text-sm">Call Us</h4>
+                  <h4 className="font-semibold text-sm">{t.footer.callUs}</h4>
                 </div>
                 <Link
                   href="tel:+15145003422"
@@ -92,7 +99,7 @@ export function FooterSection() {
                   <div className="p-2 rounded-lg bg-gold/10">
                     <Mail className="w-4 h-4 text-gold" />
                   </div>
-                  <h4 className="font-semibold text-sm">Email Us</h4>
+                  <h4 className="font-semibold text-sm">{t.footer.emailUs}</h4>
                 </div>
                 <Link
                   href="mailto:info@drlaurentmedecineetesthetique.com"
@@ -109,12 +116,12 @@ export function FooterSection() {
                   <div className="p-2 rounded-lg bg-gold/10">
                     <Clock className="w-4 h-4 text-gold" />
                   </div>
-                  <h4 className="font-semibold text-sm">Hours</h4>
+                  <h4 className="font-semibold text-sm">{t.footer.hours}</h4>
                 </div>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Mon-Fri: 9:00 AM - 5:00 PM
+                  {t.footer.hoursDetail}
                   <br />
-                  Sat-Sun: Closed
+                  {t.footer.satSun}
                 </p>
               </div>
             </div>
@@ -145,7 +152,7 @@ export function FooterSection() {
               className="flex items-center justify-center gap-3 w-full bg-gold hover:bg-gold-light text-navy py-4 rounded-xl text-base font-semibold transition-all duration-300"
             >
               <Calendar className="w-5 h-5" />
-              Book Your Appointment
+              {t.footer.bookAppointment}
             </Link>
           </div>
         </FadeIn>
@@ -167,13 +174,13 @@ export function FooterSection() {
             ))}
           </div>
           <div className="flex items-center gap-2 text-xs text-white/30">
-            <Link href="/" className="hover:text-gold transition-colors">
+            <a href={`/en${basePath === '/' ? '' : basePath}`} className={`hover:text-gold transition-colors ${locale === 'en' ? 'text-gold' : ''}`}>
               EN
-            </Link>
+            </a>
             <span>|</span>
-            <Link href="/fr" className="hover:text-gold transition-colors">
+            <a href={`/fr${basePath === '/' ? '' : basePath}`} className={`hover:text-gold transition-colors ${locale === 'fr' ? 'text-gold' : ''}`}>
               FR
-            </Link>
+            </a>
           </div>
         </div>
       </div>

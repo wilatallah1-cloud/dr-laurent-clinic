@@ -2,10 +2,11 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "dev",
+      "name": "dr-laurent-dev",
       "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
       "runtimeArgs": ["node_modules/next/dist/bin/next", "dev"],
-      "port": 3000
+      "port": 3000,
+      "cwd": "C:\\Users\\wilat\\dr-laurent-clinic"
     }
   ]
 }

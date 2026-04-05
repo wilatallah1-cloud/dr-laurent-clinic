@@ -12,37 +12,9 @@ import {
   Sparkles,
   Stethoscope,
 } from "lucide-react";
-import Link from "next/link";
-
-const aestheticLinks = [
-  { label: "All Aesthetic Services", href: "/medical-aesthetic" },
-  { label: "Injectables & Fillers", href: "/medical-aesthetic/injectables" },
-  { label: "Radiofrequency & Lifting", href: "/medical-aesthetic/radiofrequency-lifting" },
-  { label: "Lasers", href: "/medical-aesthetic/lasers" },
-  { label: "Lipolysis", href: "/medical-aesthetic/lipolysis" },
-  { label: "Liquid Brazilian Butt Lift", href: "/medical-aesthetic/liquid-brazilian-butt-lift" },
-  { label: "Hair Stimulation", href: "/medical-aesthetic/hair-stimulation" },
-  { label: "Non-Surgical Blepharoplasty", href: "/medical-aesthetic/non-surgical-blepharoplasty" },
-  { label: "Facial Contouring", href: "/medical-aesthetic/facial-contouring" },
-];
-
-const sexualHealthLinks = [
-  { label: "Penis Fillers", href: "/sexual-health/penis-fillers" },
-  { label: "Scrotox & Grotox", href: "/sexual-health/scrotox-grotox" },
-  { label: "Holetox (Anal Botox)", href: "/sexual-health/holetox" },
-  { label: "Penis Enhancement Benefits", href: "/sexual-health/penis-enhancement-benefits" },
-  { label: "FAQ - Penile Enhancement", href: "/sexual-health/faq" },
-];
-
-const medicalLinks = [
-  { label: "All Medical Services", href: "/medical-services" },
-  { label: "Consultation", href: "/medical-services/consultation" },
-  { label: "Family Medicine", href: "/medical-services/family-medicine" },
-  { label: "Minor Emergency", href: "/medical-services/minor-emergency" },
-  { label: "Mental Health", href: "/medical-services/mental-health" },
-  { label: "Hormonotherapy", href: "/medical-services/hormonotherapy" },
-  { label: "Weight Management", href: "/medical-services/weight-management" },
-];
+import Link from "@/components/locale-link";
+import { useLocale } from "@/lib/locale";
+import { getTranslations } from "@/lib/translations";
 
 function DesktopDropdown({
   label,
@@ -153,6 +125,38 @@ function MobileAccordion({
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const locale = useLocale();
+  const t = getTranslations(locale);
+
+  const aestheticLinks = [
+    { label: t.nav.allAesthetic, href: "/medical-aesthetic" },
+    { label: t.nav.injectables, href: "/medical-aesthetic/injectables" },
+    { label: t.nav.radiofrequency, href: "/medical-aesthetic/radiofrequency-lifting" },
+    { label: t.nav.lasers, href: "/medical-aesthetic/lasers" },
+    { label: t.nav.lipolysis, href: "/medical-aesthetic/lipolysis" },
+    { label: t.nav.liquidBBL, href: "/medical-aesthetic/liquid-brazilian-butt-lift" },
+    { label: t.nav.hairStim, href: "/medical-aesthetic/hair-stimulation" },
+    { label: t.nav.blepharoplasty, href: "/medical-aesthetic/non-surgical-blepharoplasty" },
+    { label: t.nav.facialContouring, href: "/medical-aesthetic/facial-contouring" },
+  ];
+
+  const sexualHealthLinks = [
+    { label: t.nav.penisFillers, href: "/sexual-health/penis-fillers" },
+    { label: t.nav.scrotox, href: "/sexual-health/scrotox-grotox" },
+    { label: t.nav.holetox, href: "/sexual-health/holetox" },
+    { label: t.nav.penisEnhancement, href: "/sexual-health/penis-enhancement-benefits" },
+    { label: t.nav.faqPenile, href: "/sexual-health/faq" },
+  ];
+
+  const medicalLinks = [
+    { label: t.nav.allMedical, href: "/medical-services" },
+    { label: t.nav.consultation, href: "/medical-services/consultation" },
+    { label: t.nav.familyMedicine, href: "/medical-services/family-medicine" },
+    { label: t.nav.minorEmergency, href: "/medical-services/minor-emergency" },
+    { label: t.nav.mentalHealth, href: "/medical-services/mental-health" },
+    { label: t.nav.hormonotherapy, href: "/medical-services/hormonotherapy" },
+    { label: t.nav.weightManagement, href: "/medical-services/weight-management" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -190,8 +194,8 @@ export function Navbar() {
             {/* Desktop Nav */}
             <nav className="hidden xl:flex items-center gap-0">
               {[
-                { label: "Home", href: "/" },
-                { label: "About", href: "/about" },
+                { label: t.nav.home, href: "/" },
+                { label: t.nav.about, href: "/about" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -204,20 +208,20 @@ export function Navbar() {
                 </Link>
               ))}
               <DesktopDropdown
-                label="Aesthetic"
-                links={[...aestheticLinks, { label: "── Sexual Health ──", href: "#" }, ...sexualHealthLinks]}
+                label={t.nav.aesthetic}
+                links={[...aestheticLinks, { label: `── ${t.nav.sexualHealthLabel} ──`, href: "#" }, ...sexualHealthLinks]}
                 scrolled={scrolled}
               />
               <DesktopDropdown
-                label="Services"
+                label={t.nav.services}
                 links={medicalLinks}
                 scrolled={scrolled}
               />
               {[
-                { label: "Pricing", href: "/pricing" },
-                { label: "Promotions", href: "/promotions" },
-                { label: "FAQ", href: "/faq" },
-                { label: "Contact", href: "/contact" },
+                { label: t.nav.pricing, href: "/pricing" },
+                { label: t.nav.promotions, href: "/promotions" },
+                { label: t.nav.faq, href: "/faq" },
+                { label: t.nav.contact, href: "/contact" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -247,7 +251,7 @@ export function Navbar() {
                 className="flex items-center gap-1.5 bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
               >
                 <Calendar className="w-3.5 h-3.5" />
-                Book Now
+                {t.nav.bookNow}
               </Link>
             </div>
 
@@ -276,25 +280,25 @@ export function Navbar() {
           >
             <nav className="flex flex-col">
               <Link href="/" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
-                Home
+                {t.nav.home}
               </Link>
               <Link href="/about" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
-                About
+                {t.nav.about}
               </Link>
-              <MobileAccordion label="Medical Aesthetic" links={aestheticLinks} onNavigate={closeMobile} />
-              <MobileAccordion label="Sexual Health" links={sexualHealthLinks} onNavigate={closeMobile} />
-              <MobileAccordion label="Medical Services" links={medicalLinks} onNavigate={closeMobile} />
+              <MobileAccordion label={t.nav.medicalAesthetic} links={aestheticLinks} onNavigate={closeMobile} />
+              <MobileAccordion label={t.nav.sexualHealthLabel} links={sexualHealthLinks} onNavigate={closeMobile} />
+              <MobileAccordion label={t.nav.medicalServices} links={medicalLinks} onNavigate={closeMobile} />
               <Link href="/pricing" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
-                Pricing
+                {t.nav.pricing}
               </Link>
               <Link href="/promotions" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
-                Promotions
+                {t.nav.promotions}
               </Link>
               <Link href="/faq" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
-                FAQ
+                {t.nav.faq}
               </Link>
               <Link href="/contact" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
-                Contact
+                {t.nav.contact}
               </Link>
             </nav>
             <div className="mt-8 flex flex-col gap-3">
@@ -311,7 +315,7 @@ export function Navbar() {
                 className="flex items-center justify-center gap-2 bg-gold text-navy py-3 rounded-xl text-base font-semibold"
               >
                 <Calendar className="w-5 h-5" />
-                Book Your Appointment
+                {t.nav.bookNow}
               </Link>
             </div>
           </motion.div>
@@ -326,14 +330,14 @@ export function Navbar() {
             className="flex flex-col items-center gap-1 py-3 text-white/80 hover:text-gold transition-colors"
           >
             <Phone className="w-5 h-5" />
-            <span className="text-xs">Call</span>
+            <span className="text-xs">{t.nav.call}</span>
           </Link>
           <Link
             href="/contact"
             className="flex flex-col items-center gap-1 py-3 text-gold"
           >
             <Calendar className="w-5 h-5" />
-            <span className="text-xs font-semibold">Book</span>
+            <span className="text-xs font-semibold">{t.nav.book}</span>
           </Link>
           <Link
             href="https://maps.google.com/?q=4072+Le+Corbusier+Laval+QC"
@@ -341,7 +345,7 @@ export function Navbar() {
             className="flex flex-col items-center gap-1 py-3 text-white/80 hover:text-gold transition-colors"
           >
             <MapPin className="w-5 h-5" />
-            <span className="text-xs">Location</span>
+            <span className="text-xs">{t.nav.location}</span>
           </Link>
         </div>
       </div>
