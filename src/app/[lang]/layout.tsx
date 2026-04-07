@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { LocaleProvider, type Locale } from "@/lib/locale";
+import { ChatWidget } from "@/components/chat-widget";
 import "../globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -68,7 +69,10 @@ export default async function RootLayout({
       className={`${cormorant.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
-        <LocaleProvider locale={locale}>{children}</LocaleProvider>
+        <LocaleProvider locale={locale}>
+          {children}
+          <ChatWidget />
+        </LocaleProvider>
       </body>
     </html>
   );
