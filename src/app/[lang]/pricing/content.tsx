@@ -954,7 +954,7 @@ export function PricingContent() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
-                  href="/contact"
+                  href="/booking"
                   className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy px-10 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
                 >
                   <Calendar className="w-5 h-5" />

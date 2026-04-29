@@ -16,7 +16,7 @@ const content = {
       "A comprehensive suite of medical-grade lasers operated by experienced professionals.",
     featurePlatforms: "Multiple Platforms",
     featurePlatformsDesc:
-      "Clarity, Potenza, PicoSure Pro, CO2 Tetra, Ultra, and Cynoglow — the right laser for every concern.",
+      "Clarity, Potenza, PicoSure Pro, CO2 Tetra, Ultra, and Cynoglow. The right laser for every concern.",
     featureSafety: "Medical-Grade Safety",
     featureSafetyDesc:
       "All treatments performed under physician supervision with FDA-cleared devices and strict safety protocols.",
@@ -107,7 +107,7 @@ const content = {
       "Une gamme complète de lasers de grade médical opérés par des professionnels expérimentés.",
     featurePlatforms: "Plateformes multiples",
     featurePlatformsDesc:
-      "Clarity, Potenza, PicoSure Pro, CO2 Tetra, Ultra et Cynoglow — le bon laser pour chaque préoccupation.",
+      "Clarity, Potenza, PicoSure Pro, CO2 Tetra, Ultra et Cynoglow. Le bon laser pour chaque préoccupation.",
     featureSafety: "Sécurité de grade médical",
     featureSafetyDesc:
       "Tous les traitements effectués sous supervision médicale avec des appareils approuvés et des protocoles de sécurité stricts.",

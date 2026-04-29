@@ -61,7 +61,7 @@ const content = {
       "Follow-up to assess results and fine-tune as needed. Maintenance plan for long-term contour.",
     testimonial1Treatment: "Jawline Contouring",
     testimonial1Text:
-      "Dr. Laurent sculpted the jawline I always wanted. The results look so natural — like I was born with this bone structure. His artistry is exceptional.",
+      "Dr. Laurent sculpted the jawline I always wanted. The results look so natural. Like I was born with this bone structure. His artistry is exceptional.",
     testimonial2Treatment: "Full Facial Contouring",
     testimonial2Text:
       "The facial transformation package completely changed my face for the better. Sharper jaw, defined cheekbones, stronger chin. I look like a better version of myself.",
@@ -70,7 +70,7 @@ const content = {
       "I wanted more definition without looking 'done.' Dr. Laurent's approach was so thoughtful and artistic. My profile is dramatically improved and it all looks natural.",
     faq1Q: "What is non-surgical facial contouring?",
     faq1A:
-      "Non-surgical facial contouring uses injectable fillers, neuromodulators, and energy-based devices to sculpt and define facial features — jawline, cheekbones, chin, and more — without surgery. Results are immediate and can be tailored to your aesthetic goals.",
+      "Non-surgical facial contouring uses injectable fillers, neuromodulators, and energy-based devices to sculpt and define facial features. Jawline, cheekbones, chin, and more. Without surgery. Results are immediate and can be tailored to your aesthetic goals.",
     faq2Q: "How long do facial contouring results last?",
     faq2A:
       "Hyaluronic acid fillers in structural areas like the jawline and cheekbones typically last 12-18 months. Sculptra and Radiesse can last up to 2 years. Maintenance sessions help sustain your defined contour over time.",
@@ -152,7 +152,7 @@ const content = {
       "Suivi pour évaluer les résultats et ajuster au besoin. Plan d'entretien pour un contour à long terme.",
     testimonial1Treatment: "Remodelage de la mâchoire",
     testimonial1Text:
-      "Dr Laurent a sculpté la mâchoire dont j'ai toujours rêvé. Les résultats ont l'air tellement naturels — comme si j'étais née avec cette structure osseuse. Son art est exceptionnel.",
+      "Dr Laurent a sculpté la mâchoire dont j'ai toujours rêvé. Les résultats ont l'air tellement naturels. Comme si j'étais née avec cette structure osseuse. Son art est exceptionnel.",
     testimonial2Treatment: "Remodelage facial complet",
     testimonial2Text:
       "Le forfait de transformation faciale a complètement changé mon visage pour le mieux. Mâchoire plus nette, pommettes définies, menton plus fort. J'ai l'air d'une meilleure version de moi-même.",
@@ -161,7 +161,7 @@ const content = {
       "Je voulais plus de définition sans avoir l'air « refait ». L'approche de Dr Laurent était tellement réfléchie et artistique. Mon profil est considérablement amélioré et tout a l'air naturel.",
     faq1Q: "Qu'est-ce que le remodelage facial non chirurgical?",
     faq1A:
-      "Le remodelage facial non chirurgical utilise des agents de comblement injectables, des neuromodulateurs et des appareils à énergie pour sculpter et définir les traits du visage — mâchoire, pommettes, menton et plus — sans chirurgie. Les résultats sont immédiats et peuvent être adaptés à vos objectifs esthétiques.",
+      "Le remodelage facial non chirurgical utilise des agents de comblement injectables, des neuromodulateurs et des appareils à énergie pour sculpter et définir les traits du visage. Mâchoire, pommettes, menton et plus. Sans chirurgie. Les résultats sont immédiats et peuvent être adaptés à vos objectifs esthétiques.",
     faq2Q: "Combien de temps durent les résultats du remodelage facial?",
     faq2A:
       "Les agents de comblement à l'acide hyaluronique dans les zones structurelles comme la mâchoire et les pommettes durent généralement 12 à 18 mois. Le Sculptra et le Radiesse peuvent durer jusqu'à 2 ans. Les séances d'entretien aident à maintenir vos contours définis au fil du temps.",

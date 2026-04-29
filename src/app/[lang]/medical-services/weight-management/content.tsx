@@ -14,7 +14,7 @@ const content = {
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Why Choose Dr. Laurent",
     whySubtitle:
-      "A medically supervised approach to weight management — no fad diets, just science-backed results.",
+      "A medically supervised approach to weight management. No fad diets, just science-backed results.",
     features: [
       {
         icon: Scale,
@@ -29,7 +29,7 @@ const content = {
       {
         icon: Heart,
         title: "Compassionate Support",
-        desc: "A judgment-free approach that focuses on health outcomes — not numbers on a scale. Your well-being is always the priority.",
+        desc: "A judgment-free approach that focuses on health outcomes. Not numbers on a scale. Your well-being is always the priority.",
       },
       {
         icon: Activity,
@@ -51,7 +51,7 @@ const content = {
       },
       {
         title: "Nutritional Guidance",
-        desc: "Personalized nutritional strategies based on your metabolism, preferences, and health conditions — sustainable changes, not crash diets.",
+        desc: "Personalized nutritional strategies based on your metabolism, preferences, and health conditions. Sustainable changes, not crash diets.",
       },
       {
         title: "Hormonal Optimization",
@@ -59,7 +59,7 @@ const content = {
       },
       {
         title: "Combined Hormone & Weight Program",
-        desc: "An integrated approach for patients who would benefit from simultaneous hormonal therapy and weight management — available as a combined consultation.",
+        desc: "An integrated approach for patients who would benefit from simultaneous hormonal therapy and weight management. Available as a combined consultation.",
       },
       {
         title: "Lipolysis Treatments",
@@ -77,7 +77,7 @@ const content = {
         name: "Nathalie C.",
         initial: "N",
         treatment: "Weight Management",
-        text: "After years of failed diets, Dr. Laurent finally helped me understand the medical factors behind my weight. The personalized program has been life-changing — I've lost 30 lbs and kept it off.",
+        text: "After years of failed diets, Dr. Laurent finally helped me understand the medical factors behind my weight. The personalized program has been life-changing. I've lost 30 lbs and kept it off.",
         rating: 5,
       },
       {
@@ -91,14 +91,14 @@ const content = {
         name: "Samira H.",
         initial: "S",
         treatment: "Weight Management",
-        text: "No judgment, no shame — just real medical support. Dr. Laurent treated me with dignity and created a plan that fits my life. I've never felt this healthy or this supported.",
+        text: "No judgment, no shame. Just real medical support. Dr. Laurent treated me with dignity and created a plan that fits my life. I've never felt this healthy or this supported.",
         rating: 5,
       },
     ],
     faqs: [
       {
         q: "What makes medical weight management different from a regular diet?",
-        a: "Medical weight management addresses the underlying causes of weight gain — metabolic, hormonal, psychological, and genetic factors. Rather than restrictive dieting, Dr. Laurent creates an evidence-based plan that may include medication, hormonal optimization, and sustainable lifestyle changes.",
+        a: "Medical weight management addresses the underlying causes of weight gain. Metabolic, hormonal, psychological, and genetic factors. Rather than restrictive dieting, Dr. Laurent creates an evidence-based plan that may include medication, hormonal optimization, and sustainable lifestyle changes.",
       },
       {
         q: "How much does the weight management program cost?",
@@ -140,7 +140,7 @@ const content = {
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Pourquoi choisir Dr Laurent",
     whySubtitle:
-      "Une approche médicalement supervisée de la gestion du poids — pas de régimes à la mode, juste des résultats appuyés par la science.",
+      "Une approche médicalement supervisée de la gestion du poids. Pas de régimes à la mode, juste des résultats appuyés par la science.",
     features: [
       {
         icon: Scale,
@@ -155,7 +155,7 @@ const content = {
       {
         icon: Heart,
         title: "Soutien compatissant",
-        desc: "Une approche sans jugement axée sur les résultats de santé — pas les chiffres sur la balance. Votre bien-être est toujours la priorité.",
+        desc: "Une approche sans jugement axée sur les résultats de santé. Pas les chiffres sur la balance. Votre bien-être est toujours la priorité.",
       },
       {
         icon: Activity,
@@ -177,7 +177,7 @@ const content = {
       },
       {
         title: "Conseils nutritionnels",
-        desc: "Stratégies nutritionnelles personnalisées basées sur votre métabolisme, vos préférences et vos conditions de santé — des changements durables, pas des régimes draconiens.",
+        desc: "Stratégies nutritionnelles personnalisées basées sur votre métabolisme, vos préférences et vos conditions de santé. Des changements durables, pas des régimes draconiens.",
       },
       {
         title: "Optimisation hormonale",
@@ -185,7 +185,7 @@ const content = {
       },
       {
         title: "Programme combiné hormones et poids",
-        desc: "Une approche intégrée pour les patients qui bénéficieraient d'une hormonothérapie simultanée et d'une gestion du poids — disponible en consultation combinée.",
+        desc: "Une approche intégrée pour les patients qui bénéficieraient d'une hormonothérapie simultanée et d'une gestion du poids. Disponible en consultation combinée.",
       },
       {
         title: "Traitements de lipolyse",
@@ -203,7 +203,7 @@ const content = {
         name: "Nathalie C.",
         initial: "N",
         treatment: "Gestion du poids",
-        text: "Après des années de régimes échoués, Dr Laurent m'a enfin aidée à comprendre les facteurs médicaux derrière mon poids. Le programme personnalisé a changé ma vie — j'ai perdu 30 livres et maintenu le résultat.",
+        text: "Après des années de régimes échoués, Dr Laurent m'a enfin aidée à comprendre les facteurs médicaux derrière mon poids. Le programme personnalisé a changé ma vie. J'ai perdu 30 livres et maintenu le résultat.",
         rating: 5,
       },
       {
@@ -217,14 +217,14 @@ const content = {
         name: "Samira H.",
         initial: "S",
         treatment: "Gestion du poids",
-        text: "Pas de jugement, pas de honte — juste un vrai soutien médical. Dr Laurent m'a traitée avec dignité et a créé un plan qui convient à ma vie. Je ne me suis jamais sentie aussi en santé ni aussi soutenue.",
+        text: "Pas de jugement, pas de honte. Juste un vrai soutien médical. Dr Laurent m'a traitée avec dignité et a créé un plan qui convient à ma vie. Je ne me suis jamais sentie aussi en santé ni aussi soutenue.",
         rating: 5,
       },
     ],
     faqs: [
       {
         q: "Qu'est-ce qui distingue la gestion médicale du poids d'un régime ordinaire?",
-        a: "La gestion médicale du poids aborde les causes sous-jacentes de la prise de poids — facteurs métaboliques, hormonaux, psychologiques et génétiques. Plutôt que des régimes restrictifs, Dr Laurent crée un plan fondé sur les données probantes pouvant inclure la médication, l'optimisation hormonale et des changements de mode de vie durables.",
+        a: "La gestion médicale du poids aborde les causes sous-jacentes de la prise de poids. Facteurs métaboliques, hormonaux, psychologiques et génétiques. Plutôt que des régimes restrictifs, Dr Laurent crée un plan fondé sur les données probantes pouvant inclure la médication, l'optimisation hormonale et des changements de mode de vie durables.",
       },
       {
         q: "Combien coûte le programme de gestion du poids?",
@@ -232,7 +232,7 @@ const content = {
       },
       {
         q: "Prescrivez-vous des médicaments pour la perte de poids?",
-        a: "Oui, lorsque médicalement approprié. Dr Laurent peut prescrire des médicaments approuvés tels que les agonistes du récepteur GLP-1 (p. ex., sémaglutide, liraglutide) dans le cadre d'un plan complet de gestion du poids. L'admissibilité est déterminée lors de votre consultation.",
+        a: "Oui, lorsque médicalement approprié. Dr Laurent peut prescrire des médicaments approuvés tels que les agonistes du récepteur GLP-1 (p. Ex., sémaglutide, liraglutide) dans le cadre d'un plan complet de gestion du poids. L'admissibilité est déterminée lors de votre consultation.",
       },
       {
         q: "À quelle fréquence aurai-je besoin de rendez-vous de suivi?",

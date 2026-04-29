@@ -14,7 +14,7 @@ const content = {
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Why Choose Dr. Laurent",
     whySubtitle:
-      "Experience healthcare the way it should be — unhurried, thorough, and centered around you.",
+      "Experience healthcare the way it should be. Unhurried, thorough, and centered around you.",
     features: [
       {
         icon: Stethoscope,
@@ -24,7 +24,7 @@ const content = {
       {
         icon: Clock,
         title: "Unhurried Appointments",
-        desc: "Generous appointment times so you never feel rushed — your concerns deserve full attention and careful consideration.",
+        desc: "Generous appointment times so you never feel rushed. Your concerns deserve full attention and careful consideration.",
       },
       {
         icon: ShieldCheck,
@@ -67,7 +67,7 @@ const content = {
       },
     ],
     steps: [
-      { step: 1, title: "Book Your Appointment", desc: "Schedule online or by phone — same-day and next-day appointments are often available." },
+      { step: 1, title: "Book Your Appointment", desc: "Schedule online or by phone. Same-day and next-day appointments are often available." },
       { step: 2, title: "Initial Assessment", desc: "A thorough evaluation of your health history, current concerns, and overall wellness goals." },
       { step: 3, title: "Diagnosis & Plan", desc: "Clear explanation of findings with a personalized treatment or management plan." },
       { step: 4, title: "Follow-Up & Support", desc: "Ongoing care coordination, prescription management, and follow-up appointments as needed." },
@@ -139,7 +139,7 @@ const content = {
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Pourquoi choisir Dr Laurent",
     whySubtitle:
-      "Vivez les soins de santé tels qu'ils devraient être — sans précipitation, approfondis et centrés sur vous.",
+      "Vivez les soins de santé tels qu'ils devraient être. Sans précipitation, approfondis et centrés sur vous.",
     features: [
       {
         icon: Stethoscope,
@@ -149,7 +149,7 @@ const content = {
       {
         icon: Clock,
         title: "Rendez-vous sans précipitation",
-        desc: "Des durées de rendez-vous généreuses pour que vous ne vous sentiez jamais pressé — vos préoccupations méritent une attention complète et une considération attentive.",
+        desc: "Des durées de rendez-vous généreuses pour que vous ne vous sentiez jamais pressé. Vos préoccupations méritent une attention complète et une considération attentive.",
       },
       {
         icon: ShieldCheck,
@@ -192,7 +192,7 @@ const content = {
       },
     ],
     steps: [
-      { step: 1, title: "Prenez rendez-vous", desc: "Planifiez en ligne ou par téléphone — des rendez-vous le jour même ou le lendemain sont souvent disponibles." },
+      { step: 1, title: "Prenez rendez-vous", desc: "Planifiez en ligne ou par téléphone. Des rendez-vous le jour même ou le lendemain sont souvent disponibles." },
       { step: 2, title: "Évaluation initiale", desc: "Une évaluation approfondie de votre historique de santé, de vos préoccupations actuelles et de vos objectifs de bien-être." },
       { step: 3, title: "Diagnostic et plan", desc: "Explication claire des résultats avec un plan de traitement ou de gestion personnalisé." },
       { step: 4, title: "Suivi et soutien", desc: "Coordination continue des soins, gestion des prescriptions et rendez-vous de suivi au besoin." },

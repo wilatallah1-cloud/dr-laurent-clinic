@@ -8,7 +8,6 @@ const translations = {
       aesthetic: "Aesthetic",
       services: "Services",
       pricing: "Pricing",
-      promotions: "Promotions",
       faq: "FAQ",
       contact: "Contact",
       bookNow: "Book Now",
@@ -71,13 +70,18 @@ const translations = {
       transformation: "transformation?",
       bookToday: "Book your consultation today",
       formSubtitle:
-        "Free analysis — less than 1 minute to start your consultation",
+        "Free analysis. Less than 1 minute to start your consultation",
       fullName: "Full Name *",
       emailAddress: "Email Address *",
       phoneNumber: "Phone Number",
       interestedIn: "What are you interested in? *",
       selectTreatment: "Select a treatment",
       submit: "Submit",
+      sending: "Sending...",
+      successTitle: "Thank you!",
+      successBody: "We'll contact you within 24 hours to discuss next steps.",
+      errorTitle: "Something went wrong",
+      errorBody: "Please try again or call us at (514) 500-3422.",
       confidential: "Your information is 100% confidential and secure",
     },
     hero: {
@@ -85,7 +89,7 @@ const translations = {
       medicine: "Medicine",
       subtitle: "Private Healthcare & Medical Aesthetic Solutions",
       description:
-        "One physician. Two specialties. Dr. Laurent unites comprehensive medical care and advanced medical aesthetic treatments under one roof—distinct services delivered with the same precision, safety, and personalized excellence.",
+        "One physician. Two specialties. Dr. Laurent unites comprehensive medical care and advanced medical aesthetic treatments under one roof. Distinct services delivered with the same precision, safety, and personalized excellence.",
       privateMedicine: "Private Medicine",
       medicalAesthetic: "Medical Aesthetic",
     },
@@ -111,7 +115,7 @@ const translations = {
     doctor: {
       name: "Dr. Jean-Baptiste Laurent",
       role: "Family Medicine Specialist",
-      bio: "With extensive training in both family medicine and aesthetic procedures, Dr. Laurent brings a unique dual expertise to every patient interaction\u2014combining medical rigor with an artist\u2019s eye for natural, balanced results.",
+      bio: "With extensive training in both family medicine and aesthetic procedures, Dr. Laurent brings a unique dual expertise to every patient interaction. Combining medical rigor with an artist\u2019s eye for natural, balanced results.",
       years: "Years",
       patients: "Patients",
       certifications: "Certifications",
@@ -124,7 +128,7 @@ const translations = {
         "Medical care and medico-aesthetic treatments designed with your privacy, comfort, and well-being at the heart of everything we do.",
       familyMedicine: "Family Medicine",
       familyMedicineDesc:
-        "Primary care for patients of all ages\u2014from newborns to seniors\u2014delivered in an inclusive environment that also warmly welcomes transgender and gender-diverse individuals.",
+        "Primary care for patients of all ages. From newborns to seniors. Delivered in an inclusive environment that also warmly welcomes transgender and gender-diverse individuals.",
       injectables: "Injectables & Fillers",
       injectablesDesc:
         "Botox, dermal fillers, and advanced injectable treatments to enhance your natural beauty with subtle, elegant results.",
@@ -231,7 +235,6 @@ const translations = {
       aesthetic: "Esth\u00E9tique",
       services: "Services",
       pricing: "Tarifs",
-      promotions: "Promotions",
       faq: "FAQ",
       contact: "Contact",
       bookNow: "R\u00E9server",
@@ -251,7 +254,7 @@ const translations = {
       scrotox: "Scrotox et Grotox",
       holetox: "Holetox (Botox anal)",
       penisEnhancement: "Avantages de l\u2019augmentation p\u00E9nienne",
-      faqPenile: "FAQ \u2013 Augmentation p\u00E9nienne",
+      faqPenile: "FAQ, Augmentation p\u00E9nienne",
       sexualHealth: "\u2500\u2500 Sant\u00E9 sexuelle \u2500\u2500",
       allMedical: "Tous les services m\u00E9dicaux",
       consultation: "Consultation",
@@ -294,13 +297,20 @@ const translations = {
       transformation: "transformation\u00A0?",
       bookToday: "R\u00E9servez votre consultation d\u00E8s aujourd\u2019hui",
       formSubtitle:
-        "Analyse gratuite \u2014 moins d\u20191 minute pour d\u00E9buter votre consultation",
+        "Analyse gratuite. Moins d\u20191 minute pour d\u00E9buter votre consultation",
       fullName: "Nom complet *",
       emailAddress: "Adresse courriel *",
       phoneNumber: "Num\u00E9ro de t\u00E9l\u00E9phone",
       interestedIn: "Quel traitement vous int\u00E9resse\u00A0? *",
       selectTreatment: "S\u00E9lectionnez un traitement",
       submit: "Envoyer",
+      sending: "Envoi...",
+      successTitle: "Merci\u00A0!",
+      successBody:
+        "Nous vous contacterons dans les 24 heures pour discuter des prochaines \u00E9tapes.",
+      errorTitle: "Une erreur est survenue",
+      errorBody:
+        "Veuillez r\u00E9essayer ou nous appeler au (514) 500-3422.",
       confidential:
         "Vos informations sont 100\u00A0% confidentielles et s\u00E9curis\u00E9es",
     },
@@ -309,7 +319,7 @@ const translations = {
       medicine: "M\u00E9decine",
       subtitle: "Soins de sant\u00E9 priv\u00E9s et solutions d\u2019esth\u00E9tique m\u00E9dicale",
       description:
-        "Un m\u00E9decin. Deux sp\u00E9cialit\u00E9s. Le Dr\u00A0Laurent r\u00E9unit les soins m\u00E9dicaux complets et les traitements avanc\u00E9s d\u2019esth\u00E9tique m\u00E9dicale sous un m\u00EAme toit\u2014des services distincts offerts avec la m\u00EAme pr\u00E9cision, s\u00E9curit\u00E9 et excellence personnalis\u00E9e.",
+        "Un m\u00E9decin. Deux sp\u00E9cialit\u00E9s. Le Dr\u00A0Laurent r\u00E9unit les soins m\u00E9dicaux complets et les traitements avanc\u00E9s d\u2019esth\u00E9tique m\u00E9dicale sous un m\u00EAme toit. Des services distincts offerts avec la m\u00EAme pr\u00E9cision, s\u00E9curit\u00E9 et excellence personnalis\u00E9e.",
       privateMedicine: "M\u00E9decine priv\u00E9e",
       medicalAesthetic: "Esth\u00E9tique m\u00E9dicale",
     },
@@ -336,7 +346,7 @@ const translations = {
     doctor: {
       name: "Dr. Jean-Baptiste Laurent",
       role: "Sp\u00E9cialiste en m\u00E9decine familiale",
-      bio: "Avec une formation approfondie en m\u00E9decine familiale et en proc\u00E9dures esth\u00E9tiques, le Dr\u00A0Laurent apporte une double expertise unique \u00E0 chaque interaction avec ses patients\u2014combinant la rigueur m\u00E9dicale avec l\u2019\u0153il d\u2019un artiste pour des r\u00E9sultats naturels et \u00E9quilibr\u00E9s.",
+      bio: "Avec une formation approfondie en m\u00E9decine familiale et en proc\u00E9dures esth\u00E9tiques, le Dr\u00A0Laurent apporte une double expertise unique \u00E0 chaque interaction avec ses patients. Combinant la rigueur m\u00E9dicale avec l\u2019\u0153il d\u2019un artiste pour des r\u00E9sultats naturels et \u00E9quilibr\u00E9s.",
       years: "Ann\u00E9es",
       patients: "Patients",
       certifications: "Certifications",
@@ -349,7 +359,7 @@ const translations = {
         "Soins m\u00E9dicaux et traitements m\u00E9dico-esth\u00E9tiques con\u00E7us avec votre vie priv\u00E9e, votre confort et votre bien-\u00EAtre au c\u0153ur de tout ce que nous faisons.",
       familyMedicine: "M\u00E9decine familiale",
       familyMedicineDesc:
-        "Soins primaires pour les patients de tous \u00E2ges\u2014des nouveau-n\u00E9s aux a\u00EEn\u00E9s\u2014dans un environnement inclusif qui accueille chaleureusement les personnes transgenres et de genre diversifi\u00E9.",
+        "Soins primaires pour les patients de tous \u00E2ges. Des nouveau-n\u00E9s aux a\u00EEn\u00E9s. Dans un environnement inclusif qui accueille chaleureusement les personnes transgenres et de genre diversifi\u00E9.",
       injectables: "Injectables et comblement",
       injectablesDesc:
         "Botox, comblement dermique et traitements injectables avanc\u00E9s pour sublimer votre beaut\u00E9 naturelle avec des r\u00E9sultats subtils et \u00E9l\u00E9gants.",

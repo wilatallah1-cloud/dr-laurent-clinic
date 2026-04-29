@@ -50,7 +50,7 @@ const content = {
       },
       {
         title: "Minimal Downtime",
-        desc: "Quick 30-45 minute procedure with minimal recovery time—return to normal activities quickly.",
+        desc: "Quick 30-45 minute procedure with minimal recovery time. Return to normal activities quickly.",
       },
       {
         title: "Confidence Boost",
@@ -168,7 +168,7 @@ const content = {
       },
       {
         title: "Temps d'arrêt minimal",
-        desc: "Procédure rapide de 30 à 45 minutes avec un temps de récupération minimal — reprise rapide des activités normales.",
+        desc: "Procédure rapide de 30 à 45 minutes avec un temps de récupération minimal. Reprise rapide des activités normales.",
       },
       {
         title: "Regain de confiance",

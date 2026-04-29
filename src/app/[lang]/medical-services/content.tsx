@@ -53,7 +53,7 @@ const content = {
       {
         icon: Users,
         title: "Family Medicine",
-        desc: "Primary care for patients of all ages — from newborns to seniors — in an inclusive environment.",
+        desc: "Primary care for patients of all ages. From newborns to seniors. In an inclusive environment.",
         href: "/medical-services/family-medicine",
       },
       {
@@ -110,7 +110,7 @@ const content = {
       {
         icon: Users,
         title: "Médecine familiale",
-        desc: "Soins primaires pour les patients de tous âges — des nouveau-nés aux aînés — dans un environnement inclusif.",
+        desc: "Soins primaires pour les patients de tous âges. Des nouveau-nés aux aînés. Dans un environnement inclusif.",
         href: "/medical-services/family-medicine",
       },
       {
@@ -238,7 +238,7 @@ export function MedicalServicesContent() {
                 {t.ctaDescription}
               </p>
               <Link
-                href="/contact"
+                href="/booking"
                 className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-10 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
               >
                 <Calendar className="w-5 h-5" />

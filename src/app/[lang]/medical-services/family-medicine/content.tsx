@@ -9,7 +9,7 @@ const content = {
     heroTitle: "Comprehensive Family",
     heroHighlight: "Medicine",
     heroDescription:
-      "Primary care for patients of all ages — from newborns to seniors — delivered in an inclusive environment that warmly welcomes every member of your family, including transgender and gender-diverse individuals.",
+      "Primary care for patients of all ages. From newborns to seniors. Delivered in an inclusive environment that warmly welcomes every member of your family, including transgender and gender-diverse individuals.",
     heroBadges: ["All ages welcome", "Inclusive care", "Annual exams"],
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Why Choose Dr. Laurent",
@@ -24,7 +24,7 @@ const content = {
       {
         icon: Users,
         title: "Care for All Ages",
-        desc: "From pediatric check-ups to senior wellness — one trusted physician for every member of your family.",
+        desc: "From pediatric check-ups to senior wellness. One trusted physician for every member of your family.",
       },
       {
         icon: Baby,
@@ -106,7 +106,7 @@ const content = {
       },
       {
         q: "Can Dr. Laurent be my family doctor?",
-        a: "Yes. Dr. Laurent accepts new patients as their primary care physician. As a private clinic, there are no waitlists — you can begin receiving care right away with prompt appointment availability.",
+        a: "Yes. Dr. Laurent accepts new patients as their primary care physician. As a private clinic, there are no waitlists. You can begin receiving care right away with prompt appointment availability.",
       },
       {
         q: "Do you provide vaccinations?",
@@ -135,7 +135,7 @@ const content = {
     heroTitle: "Médecine familiale",
     heroHighlight: "complète",
     heroDescription:
-      "Soins primaires pour les patients de tous âges — des nouveau-nés aux aînés — dans un environnement inclusif qui accueille chaleureusement chaque membre de votre famille, y compris les personnes transgenres et de genres diversifiés.",
+      "Soins primaires pour les patients de tous âges. Des nouveau-nés aux aînés. Dans un environnement inclusif qui accueille chaleureusement chaque membre de votre famille, y compris les personnes transgenres et de genres diversifiés.",
     heroBadges: ["Tous les âges bienvenus", "Soins inclusifs", "Examens annuels"],
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Pourquoi choisir Dr Laurent",
@@ -150,7 +150,7 @@ const content = {
       {
         icon: Users,
         title: "Soins pour tous les âges",
-        desc: "Des bilans pédiatriques au bien-être des aînés — un seul médecin de confiance pour chaque membre de votre famille.",
+        desc: "Des bilans pédiatriques au bien-être des aînés. Un seul médecin de confiance pour chaque membre de votre famille.",
       },
       {
         icon: Baby,
@@ -232,7 +232,7 @@ const content = {
       },
       {
         q: "Dr Laurent peut-il être mon médecin de famille?",
-        a: "Oui. Dr Laurent accepte de nouveaux patients comme médecin de soins primaires. En tant que clinique privée, il n'y a pas de liste d'attente — vous pouvez commencer à recevoir des soins immédiatement avec une disponibilité rapide de rendez-vous.",
+        a: "Oui. Dr Laurent accepte de nouveaux patients comme médecin de soins primaires. En tant que clinique privée, il n'y a pas de liste d'attente. Vous pouvez commencer à recevoir des soins immédiatement avec une disponibilité rapide de rendez-vous.",
       },
       {
         q: "Offrez-vous des vaccinations?",

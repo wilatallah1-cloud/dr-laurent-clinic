@@ -40,7 +40,7 @@ export function CTASection() {
 
         <FadeIn delay={0.3}>
           <Link
-            href="#contact"
+            href="/booking"
             className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-10 py-4 rounded-full text-base font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
           >
             <Calendar className="w-5 h-5" />

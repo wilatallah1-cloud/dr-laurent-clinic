@@ -225,7 +225,6 @@ export function Navbar() {
               />
               {[
                 { label: t.nav.pricing, href: "/pricing" },
-                { label: t.nav.promotions, href: "/promotions" },
                 { label: t.nav.faq, href: "/faq" },
                 { label: t.nav.contact, href: "/contact" },
               ].map((link) => (
@@ -263,7 +262,7 @@ export function Navbar() {
                 <span className="hidden 2xl:inline">(514) 500-3422</span>
               </Link>
               <Link
-                href="/contact"
+                href="/booking"
                 className="flex items-center gap-1.5 bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
               >
                 <Calendar className="w-3.5 h-3.5" />
@@ -319,9 +318,6 @@ export function Navbar() {
               <Link href="/pricing" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.pricing}
               </Link>
-              <Link href="/promotions" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
-                {t.nav.promotions}
-              </Link>
               <Link href="/faq" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.faq}
               </Link>
@@ -338,7 +334,7 @@ export function Navbar() {
                 (514) 500-3422
               </Link>
               <Link
-                href="/contact"
+                href="/booking"
                 onClick={closeMobile}
                 className="flex items-center justify-center gap-2 bg-gold text-navy py-3 rounded-xl text-base font-semibold"
               >
@@ -361,7 +357,7 @@ export function Navbar() {
             <span className="text-xs">{t.nav.call}</span>
           </Link>
           <Link
-            href="/contact"
+            href="/booking"
             className="flex flex-col items-center gap-1 py-3 text-gold"
           >
             <Calendar className="w-5 h-5" />

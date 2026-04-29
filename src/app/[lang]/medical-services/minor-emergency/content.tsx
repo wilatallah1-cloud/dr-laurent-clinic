@@ -14,7 +14,7 @@ const content = {
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Why Choose Dr. Laurent",
     whySubtitle:
-      "Urgent care without the chaos — fast appointments, thorough assessments, and personalized treatment.",
+      "Urgent care without the chaos. Fast appointments, thorough assessments, and personalized treatment.",
     features: [
       {
         icon: Clock,
@@ -29,7 +29,7 @@ const content = {
       {
         icon: ShieldCheck,
         title: "Professional Environment",
-        desc: "Receive urgent care in a calm, private, and fully equipped medical clinic — not a hectic ER.",
+        desc: "Receive urgent care in a calm, private, and fully equipped medical clinic. Not a hectic ER.",
       },
       {
         icon: Zap,
@@ -69,7 +69,7 @@ const content = {
     steps: [
       { step: 1, title: "Contact Us", desc: "Call or book online for a same-day appointment. We prioritize urgent cases for rapid access." },
       { step: 2, title: "Quick Assessment", desc: "Dr. Laurent evaluates your condition thoroughly, orders tests if needed, and provides a clear diagnosis." },
-      { step: 3, title: "Immediate Treatment", desc: "Receive treatment on the spot — prescriptions, procedures, or referrals as your situation requires." },
+      { step: 3, title: "Immediate Treatment", desc: "Receive treatment on the spot. Prescriptions, procedures, or referrals as your situation requires." },
       { step: 4, title: "Follow-Up Plan", desc: "Clear discharge instructions and follow-up scheduling to ensure complete recovery." },
     ],
     testimonials: [
@@ -98,7 +98,7 @@ const content = {
     faqs: [
       {
         q: "What qualifies as a minor emergency?",
-        a: "Minor emergencies include conditions that need prompt attention but are not life-threatening — infections, minor wounds, allergic reactions, acute pain, digestive issues, and similar concerns. For chest pain, difficulty breathing, severe bleeding, or suspected stroke, call 911.",
+        a: "Minor emergencies include conditions that need prompt attention but are not life-threatening. Infections, minor wounds, allergic reactions, acute pain, digestive issues, and similar concerns. For chest pain, difficulty breathing, severe bleeding, or suspected stroke, call 911.",
       },
       {
         q: "How quickly can I be seen?",
@@ -140,7 +140,7 @@ const content = {
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Pourquoi choisir Dr Laurent",
     whySubtitle:
-      "Des soins urgents sans le chaos — rendez-vous rapides, évaluations approfondies et traitement personnalisé.",
+      "Des soins urgents sans le chaos. Rendez-vous rapides, évaluations approfondies et traitement personnalisé.",
     features: [
       {
         icon: Clock,
@@ -155,7 +155,7 @@ const content = {
       {
         icon: ShieldCheck,
         title: "Environnement professionnel",
-        desc: "Recevez des soins urgents dans une clinique médicale calme, privée et entièrement équipée — pas une urgence chaotique.",
+        desc: "Recevez des soins urgents dans une clinique médicale calme, privée et entièrement équipée. Pas une urgence chaotique.",
       },
       {
         icon: Zap,
@@ -195,7 +195,7 @@ const content = {
     steps: [
       { step: 1, title: "Contactez-nous", desc: "Appelez ou réservez en ligne pour un rendez-vous le jour même. Nous priorisons les cas urgents pour un accès rapide." },
       { step: 2, title: "Évaluation rapide", desc: "Dr Laurent évalue votre condition en profondeur, demande des tests si nécessaire et fournit un diagnostic clair." },
-      { step: 3, title: "Traitement immédiat", desc: "Recevez un traitement sur place — prescriptions, procédures ou références selon votre situation." },
+      { step: 3, title: "Traitement immédiat", desc: "Recevez un traitement sur place. Prescriptions, procédures ou références selon votre situation." },
       { step: 4, title: "Plan de suivi", desc: "Instructions claires de sortie et planification de suivi pour assurer un rétablissement complet." },
     ],
     testimonials: [
@@ -224,7 +224,7 @@ const content = {
     faqs: [
       {
         q: "Qu'est-ce qui constitue une urgence mineure?",
-        a: "Les urgences mineures incluent les conditions qui nécessitent une attention rapide mais qui ne sont pas mortelles — infections, plaies mineures, réactions allergiques, douleur aiguë, problèmes digestifs et préoccupations similaires. Pour les douleurs thoraciques, les difficultés respiratoires, les saignements sévères ou un AVC suspecté, appelez le 911.",
+        a: "Les urgences mineures incluent les conditions qui nécessitent une attention rapide mais qui ne sont pas mortelles. Infections, plaies mineures, réactions allergiques, douleur aiguë, problèmes digestifs et préoccupations similaires. Pour les douleurs thoraciques, les difficultés respiratoires, les saignements sévères ou un AVC suspecté, appelez le 911.",
       },
       {
         q: "En combien de temps puis-je être vu?",

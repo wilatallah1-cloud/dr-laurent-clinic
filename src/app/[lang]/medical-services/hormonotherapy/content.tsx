@@ -9,7 +9,7 @@ const content = {
     heroTitle: "Personalized Hormone",
     heroHighlight: "Therapy",
     heroDescription:
-      "Comprehensive hormone therapy services including gender-affirming care, hormonal optimization, and ongoing monitoring — delivered in a safe, inclusive, and confidential environment.",
+      "Comprehensive hormone therapy services including gender-affirming care, hormonal optimization, and ongoing monitoring. Delivered in a safe, inclusive, and confidential environment.",
     heroBadges: ["Gender-affirming care", "Personalized protocols", "Ongoing monitoring"],
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Why Choose Dr. Laurent",
@@ -135,7 +135,7 @@ const content = {
     heroTitle: "Hormonothérapie",
     heroHighlight: "personnalisée",
     heroDescription:
-      "Services complets d'hormonothérapie incluant les soins d'affirmation de genre, l'optimisation hormonale et le suivi continu — dans un environnement sécuritaire, inclusif et confidentiel.",
+      "Services complets d'hormonothérapie incluant les soins d'affirmation de genre, l'optimisation hormonale et le suivi continu. Dans un environnement sécuritaire, inclusif et confidentiel.",
     heroBadges: ["Soins d'affirmation de genre", "Protocoles personnalisés", "Suivi continu"],
     heroImage: "https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg",
     whyTitle: "Pourquoi choisir Dr Laurent",

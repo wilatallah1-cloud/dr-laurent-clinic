@@ -34,7 +34,7 @@ const content = {
       {
         icon: Users,
         title: "Inclusive Environment",
-        desc: "A safe, affirming space for everyone — including the LGBTQIA2S+ community — where you can speak openly without fear of judgment.",
+        desc: "A safe, affirming space for everyone. Including the LGBTQIA2S+ community. Where you can speak openly without fear of judgment.",
       },
     ],
     proceduresTitle: "Our Mental Health Services",
@@ -84,7 +84,7 @@ const content = {
         name: "Marie-Claude S.",
         initial: "M",
         treatment: "Anxiety Treatment",
-        text: "I was hesitant to seek help for my anxiety, but Dr. Laurent made me feel completely at ease. The treatment plan has been transformative — I finally feel like myself again.",
+        text: "I was hesitant to seek help for my anxiety, but Dr. Laurent made me feel completely at ease. The treatment plan has been transformative. I finally feel like myself again.",
         rating: 5,
       },
       {
@@ -160,7 +160,7 @@ const content = {
       {
         icon: Users,
         title: "Environnement inclusif",
-        desc: "Un espace sécuritaire et affirmatif pour tous — y compris la communauté LGBTQIA2S+ — où vous pouvez vous exprimer librement sans crainte de jugement.",
+        desc: "Un espace sécuritaire et affirmatif pour tous. Y compris la communauté LGBTQIA2S+. Où vous pouvez vous exprimer librement sans crainte de jugement.",
       },
     ],
     proceduresTitle: "Nos services en santé mentale",
@@ -210,7 +210,7 @@ const content = {
         name: "Marie-Claude S.",
         initial: "M",
         treatment: "Traitement de l'anxiété",
-        text: "J'hésitais à chercher de l'aide pour mon anxiété, mais Dr Laurent m'a mise complètement à l'aise. Le plan de traitement a été transformateur — je me sens enfin moi-même à nouveau.",
+        text: "J'hésitais à chercher de l'aide pour mon anxiété, mais Dr Laurent m'a mise complètement à l'aise. Le plan de traitement a été transformateur. Je me sens enfin moi-même à nouveau.",
         rating: 5,
       },
       {

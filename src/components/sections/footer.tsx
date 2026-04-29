@@ -148,7 +148,7 @@ export function FooterSection() {
         <FadeIn delay={0.2}>
           <div className="mb-10">
             <Link
-              href="#"
+              href="/booking"
               className="flex items-center justify-center gap-3 w-full bg-gold hover:bg-gold-light text-navy py-4 rounded-xl text-base font-semibold transition-all duration-300"
             >
               <Calendar className="w-5 h-5" />

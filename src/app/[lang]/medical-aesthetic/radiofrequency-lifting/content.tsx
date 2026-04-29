@@ -16,7 +16,7 @@ const content = {
       "State-of-the-art radiofrequency and ultrasound technology for visible, lasting results.",
     featureTech: "Advanced Technology",
     featureTechDesc:
-      "TempSure radiofrequency and Ultraformer HIFU — two complementary technologies for comprehensive skin tightening.",
+      "TempSure radiofrequency and Ultraformer HIFU. Two complementary technologies for comprehensive skin tightening.",
     featureSafe: "Proven & Safe",
     featureSafeDesc:
       "FDA-cleared devices with an excellent safety profile. Treatments are comfortable and well-tolerated.",
@@ -64,7 +64,7 @@ const content = {
       "I wanted a non-surgical option for my sagging jawline and the Ultraformer results are incredible. My face looks lifted and more defined without any surgery.",
     testimonial2Treatment: "TempSure RF",
     testimonial2Text:
-      "The TempSure treatment was so relaxing — almost like a warm facial. Over the next few months, I noticed my skin getting progressively tighter. Love it!",
+      "The TempSure treatment was so relaxing. Almost like a warm facial. Over the next few months, I noticed my skin getting progressively tighter. Love it!",
     testimonial3Treatment: "RF Body Treatment",
     testimonial3Text:
       "The cellulite treatment on my thighs has made such a difference. The skin is smoother and firmer. I finally feel confident in shorts again!",
@@ -106,7 +106,7 @@ const content = {
       "Technologie de radiofréquence et d'ultrasons à la fine pointe pour des résultats visibles et durables.",
     featureTech: "Technologie avancée",
     featureTechDesc:
-      "Radiofréquence TempSure et HIFU Ultraformer — deux technologies complémentaires pour un raffermissement cutané complet.",
+      "Radiofréquence TempSure et HIFU Ultraformer. Deux technologies complémentaires pour un raffermissement cutané complet.",
     featureSafe: "Éprouvé et sécuritaire",
     featureSafeDesc:
       "Appareils approuvés avec un excellent profil de sécurité. Les traitements sont confortables et bien tolérés.",
@@ -154,7 +154,7 @@ const content = {
       "Je voulais une option non chirurgicale pour ma mâchoire relâchée et les résultats de l'Ultraformer sont incroyables. Mon visage a l'air soulevé et plus défini sans aucune chirurgie.",
     testimonial2Treatment: "TempSure RF",
     testimonial2Text:
-      "Le traitement TempSure était tellement relaxant — presque comme un soin du visage chaud. Au cours des mois suivants, j'ai remarqué que ma peau devenait progressivement plus ferme. J'adore!",
+      "Le traitement TempSure était tellement relaxant. Presque comme un soin du visage chaud. Au cours des mois suivants, j'ai remarqué que ma peau devenait progressivement plus ferme. J'adore!",
     testimonial3Treatment: "Traitement corporel RF",
     testimonial3Text:
       "Le traitement anti-cellulite sur mes cuisses a fait une telle différence. La peau est plus lisse et plus ferme. Je me sens enfin en confiance en shorts!",

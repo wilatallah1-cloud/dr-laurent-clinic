@@ -9,7 +9,7 @@ const content = {
     heroTitle: "Liquid Brazilian",
     heroHighlight: "Butt Lift",
     heroDescription:
-      "Non-surgical buttock enhancement using premium dermal fillers and Radiesse for natural volume, lift, and contouring — without surgery, general anesthesia, or extended downtime.",
+      "Non-surgical buttock enhancement using premium dermal fillers and Radiesse for natural volume, lift, and contouring. Without surgery, general anesthesia, or extended downtime.",
     heroBadges: ["Non-surgical", "Natural-looking results", "Minimal downtime"],
     whyTitle: "Why Choose Dr. Laurent",
     whySubtitle:
@@ -64,7 +64,7 @@ const content = {
       "I wanted more curves but didn't want surgery. The liquid BBL gave me the shape I wanted with zero downtime. Dr. Laurent really understood my goals and delivered beautifully.",
     testimonial2Treatment: "Liquid BBL - Radiesse",
     testimonial2Text:
-      "The Radiesse option was perfect for me — more structure and longer-lasting results. My shape looks so natural and proportional. Friends think I've just been working out!",
+      "The Radiesse option was perfect for me. More structure and longer-lasting results. My shape looks so natural and proportional. Friends think I've just been working out!",
     testimonial3Treatment: "Liquid BBL + Hip Dips",
     testimonial3Text:
       "Dr. Laurent addressed both my hip dips and overall volume in one session. The results are exactly what I showed him in my reference photos. So happy!",
@@ -99,7 +99,7 @@ const content = {
     heroTitle: "BBL liquide",
     heroHighlight: "(Brazilian Butt Lift)",
     heroDescription:
-      "Augmentation fessière non chirurgicale utilisant des agents de comblement dermique haut de gamme et Radiesse pour un volume, un soulèvement et un remodelage naturels — sans chirurgie, anesthésie générale ni temps d'arrêt prolongé.",
+      "Augmentation fessière non chirurgicale utilisant des agents de comblement dermique haut de gamme et Radiesse pour un volume, un soulèvement et un remodelage naturels. Sans chirurgie, anesthésie générale ni temps d'arrêt prolongé.",
     heroBadges: ["Non chirurgical", "Résultats d'apparence naturelle", "Temps d'arrêt minimal"],
     whyTitle: "Pourquoi choisir Dr Laurent",
     whySubtitle:
@@ -154,7 +154,7 @@ const content = {
       "Je voulais plus de courbes mais sans chirurgie. Le BBL liquide m'a donné la forme que je voulais sans aucun temps d'arrêt. Dr Laurent a vraiment compris mes objectifs et a livré un résultat magnifique.",
     testimonial2Treatment: "BBL liquide - Radiesse",
     testimonial2Text:
-      "L'option Radiesse était parfaite pour moi — plus de structure et des résultats plus durables. Ma silhouette a l'air tellement naturelle et proportionnée. Mes amies pensent que je me suis juste mise à m'entraîner!",
+      "L'option Radiesse était parfaite pour moi. Plus de structure et des résultats plus durables. Ma silhouette a l'air tellement naturelle et proportionnée. Mes amies pensent que je me suis juste mise à m'entraîner!",
     testimonial3Treatment: "BBL liquide + Creux des hanches",
     testimonial3Text:
       "Dr Laurent a traité à la fois mes creux des hanches et le volume global en une seule séance. Les résultats sont exactement ce que je lui avais montré dans mes photos de référence. Tellement contente!",

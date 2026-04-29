@@ -64,7 +64,7 @@ const content = {
       "My hooded eyelids made me look tired all the time. The CO2 blepharoplasty tightened my lids beautifully without surgery. People constantly tell me I look rested and refreshed!",
     testimonial2Treatment: "Eye Rejuvenation",
     testimonial2Text:
-      "I was considering surgical blepharoplasty but wanted to try the non-surgical option first. The results are remarkable — tighter skin, fewer wrinkles, and I avoided surgery entirely.",
+      "I was considering surgical blepharoplasty but wanted to try the non-surgical option first. The results are remarkable. Tighter skin, fewer wrinkles, and I avoided surgery entirely.",
     testimonial3Treatment: "Brow Lift + CO2",
     testimonial3Text:
       "The combination of brow lift and CO2 treatment opened up my entire eye area. I look years younger and more alert. The recovery was so much easier than surgery would have been.",
@@ -154,7 +154,7 @@ const content = {
       "Mes paupières tombantes me donnaient l'air fatiguée tout le temps. La blépharoplastie CO2 a raffermi mes paupières magnifiquement sans chirurgie. Les gens me disent constamment que j'ai l'air reposée et rafraîchie!",
     testimonial2Treatment: "Rajeunissement du regard",
     testimonial2Text:
-      "J'envisageais la blépharoplastie chirurgicale mais je voulais d'abord essayer l'option non chirurgicale. Les résultats sont remarquables — peau plus ferme, moins de rides, et j'ai complètement évité la chirurgie.",
+      "J'envisageais la blépharoplastie chirurgicale mais je voulais d'abord essayer l'option non chirurgicale. Les résultats sont remarquables. Peau plus ferme, moins de rides, et j'ai complètement évité la chirurgie.",
     testimonial3Treatment: "Lifting des sourcils + CO2",
     testimonial3Text:
       "La combinaison du lifting des sourcils et du traitement CO2 a ouvert tout mon regard. J'ai l'air de plusieurs années plus jeune et plus alerte. La récupération était tellement plus facile que la chirurgie l'aurait été.",

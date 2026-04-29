@@ -10,7 +10,7 @@ const testimonials = [
     name: "Marie-Claire D.",
     treatment: "Dermal Fillers",
     rating: 5,
-    text: "Dr. Laurent took the time to understand exactly what I wanted. The results are so natural—my friends just think I look well-rested. Absolutely impeccable service.",
+    text: "Dr. Laurent took the time to understand exactly what I wanted. The results are so natural. My friends just think I look well-rested. Absolutely impeccable service.",
   },
   {
     name: "Jean-Pierre T.",
@@ -40,7 +40,7 @@ const testimonials = [
     name: "David R.",
     treatment: "Body Contouring",
     rating: 5,
-    text: "Professional, discreet, and incredibly effective. Dr. Laurent's approach to body contouring is artistic—natural results that boosted my confidence enormously.",
+    text: "Professional, discreet, and incredibly effective. Dr. Laurent's approach to body contouring is artistic. Natural results that boosted my confidence enormously.",
   },
 ];
 

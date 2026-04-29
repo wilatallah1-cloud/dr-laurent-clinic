@@ -3,6 +3,7 @@
 import { Navbar } from "@/components/navbar";
 import { FooterSection } from "@/components/sections/footer";
 import { FadeIn } from "@/components/motion";
+import { LeadForm } from "@/components/lead-form";
 import {
   MapPin,
   Phone,
@@ -10,7 +11,6 @@ import {
   Clock,
   Calendar,
   CheckCircle,
-  Shield,
 } from "lucide-react";
 import Link from "@/components/locale-link";
 import { useLocale } from "@/lib/locale";
@@ -159,66 +159,7 @@ export function ContactContent() {
                 <p className="text-muted-foreground text-sm mb-6">
                   {c.formDesc}
                 </p>
-                <form className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {c.labelName}
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {c.labelEmail}
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {c.labelPhone}
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {c.labelSubject}
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {c.labelMessage}
-                    </label>
-                    <textarea
-                      rows={5}
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold resize-none"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-gold hover:bg-gold-light text-navy py-3.5 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
-                  >
-                    {c.sendMessage}
-                  </button>
-                  <p className="text-xs text-center text-muted-foreground">
-                    <Shield className="w-3 h-3 inline mr-1" />
-                    {c.confidential}
-                  </p>
-                </form>
+                <LeadForm source="website-contact" showSubject showMessage />
               </div>
             </FadeIn>
 

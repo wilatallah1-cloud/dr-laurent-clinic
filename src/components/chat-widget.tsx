@@ -22,11 +22,15 @@ export function ChatWidget() {
           div[style*="z-index: 9999"][style*="position: fixed"] {
             bottom: 4.5rem !important;
           }
+          div[style*="z-index: 9999"][style*="position: fixed"] > div {
+            max-width: calc(100vw - 2rem) !important;
+            right: 0 !important;
+          }
         }
       `}</style>
       <VapiWidget
         publicKey="64beed82-5806-471a-b426-27eb647ef69e"
-        assistantId="27bb82b4-2cf0-4040-a0ed-ac0f8e46adaa"
+        assistantId="4d1362fc-dc30-4fbc-944b-44a1e866bc4a"
         mode="chat"
         theme="light"
         position="bottom-right"
@@ -37,7 +41,7 @@ export function ChatWidget() {
         ctaButtonTextColor="#1B2A4A"
         baseBgColor="#FAF8F5"
         title="Clinique Dr. Laurent"
-        chatFirstMessage="Bonjour! Bienvenue à la Clinique Dr. Laurent — Médecine Privée & Esthétique. Comment puis-je vous aider aujourd'hui?"
+        chatFirstMessage="Bonjour! Bienvenue à la Clinique Dr. Laurent. Médecine Privée & Esthétique. Comment puis-je vous aider aujourd'hui?"
         chatPlaceholder="Tapez votre message... / Type your message..."
         chatEmptyMessage="Commencez une conversation / Start a conversation"
       />

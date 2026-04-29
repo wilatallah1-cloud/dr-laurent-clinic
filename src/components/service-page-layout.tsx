@@ -10,10 +10,10 @@ import {
   Star,
   Quote,
   ArrowRight,
-  Shield,
   Clock,
   type LucideIcon,
 } from "lucide-react";
+import { LeadForm } from "@/components/lead-form";
 import {
   Accordion,
   AccordionContent,
@@ -82,6 +82,7 @@ export interface ServicePageProps {
   /* Contact form */
   formTitle?: string;
   formOptions?: string[];
+  source?: string;
 }
 
 /* ─── Component ─── */
@@ -103,6 +104,7 @@ export function ServicePageLayout({
   faqs,
   formTitle,
   formOptions = [],
+  source = "website-service",
 }: ServicePageProps) {
   const locale = useLocale();
   const t = getTranslations(locale);
@@ -163,7 +165,7 @@ export function ServicePageLayout({
               <FadeIn delay={0.3}>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
-                    href="#contact"
+                    href="/booking"
                     className="flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
                   >
                     <Calendar className="w-5 h-5" />
@@ -192,65 +194,12 @@ export function ServicePageLayout({
                 <p className="text-muted-foreground text-sm mb-6">
                   {t.service.formSubtitle}
                 </p>
-                <form className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {t.service.fullName}
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {t.service.emailAddress}
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-navy block mb-1.5">
-                      {t.service.phoneNumber}
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                    />
-                  </div>
-                  {formOptions.length > 0 && (
-                    <div>
-                      <label className="text-sm font-medium text-navy block mb-1.5">
-                        {t.service.interestedIn}
-                      </label>
-                      <select
-                        required
-                        className="w-full px-4 py-3 rounded-xl border border-border bg-cream/50 text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold"
-                      >
-                        <option value="">{t.service.selectTreatment}</option>
-                        {formOptions.map((opt) => (
-                          <option key={opt} value={opt}>
-                            {opt}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  )}
-                  <button
-                    type="submit"
-                    className="w-full bg-gold hover:bg-gold-light text-navy py-3.5 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
-                  >
-                    {t.service.submit}
-                  </button>
-                  <p className="text-xs text-center text-muted-foreground">
-                    <Shield className="w-3 h-3 inline mr-1" />
-                    {t.service.confidential}
-                  </p>
-                </form>
+                <LeadForm
+                  source={source}
+                  service={heroTitle}
+                  formOptions={formOptions}
+                  showServiceSelect={formOptions.length > 0}
+                />
               </div>
             </FadeIn>
           </div>

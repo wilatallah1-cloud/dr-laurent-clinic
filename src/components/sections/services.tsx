@@ -154,7 +154,7 @@ export function ServicesSection() {
             {t.services.notSure}
           </p>
           <Link
-            href="/contact"
+            href="/booking"
             className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg"
           >
             <Calendar className="w-4 h-4" />
